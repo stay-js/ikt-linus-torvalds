@@ -2,12 +2,104 @@
 import Layout from '~/layouts/layout.astro';
 ---
 
-<Layout path="" title="Kezdőlap" description="TODO">
+<Layout
+  path=""
+  title="Kezdőlap"
+  description=" Linus Benedict Torvalds (Helsinki, 1969. december 28.) a népszerű, Unix-szerű operációs rendszer, a Linux fejlesztésének elindítója, jelenleg is egyik fő fejlesztője. Szülei korán elváltak, Linust az anyja Helsinkiben nevelte fel. Anyanyelve a svéd, de finnül is anyanyelvi szinten beszél."
+>
   <main class="container">
-    <div class="row" transition:name="title">
-      <div class="col-12">
-        <h1 class="text-center mt-5">Főoldal</h1>
+    <div class="row pt-5">
+      <div class="col-md-4">
+        <img
+          class="img-fluid img-thumbnail"
+          src="/linus-torvalds.jpg"
+          alt="Linus Benedict Torvalds"
+        />
+      </div>
+
+      <div class="col-md-8 mt-3 mt-md-0">
+        <h1 class="mb-0">Linus Benedict Torvalds</h1>
+        <p class="fw-bold">Helsinki, 1969. december 28.</p>
+        <p>
+          Linus Benedict Torvalds (Helsinki, 1969. december 28.) a népszerű, Unix-szerű operációs
+          rendszer, a Linux fejlesztésének elindítója, jelenleg is egyik fő fejlesztője. Szülei
+          korán elváltak, Linust az anyja Helsinkiben nevelte fel. Anyanyelve a svéd, de finnül is
+          anyanyelvi szinten beszél.
+        </p>
+        <p>
+          Három kislánya van: Patricia Miranda, Daniela és Celeste Torvalds. 1997 eleje óta az
+          USA-ban (Santa Clara) élnek. Jelenleg Linus munkaadója a Linux Foundation, amely a korábbi
+          OSDL (Open Source Development Labs) és a Free Standards Group egyesüléséből jött létre. A
+          Linux Foundation az ipar fontos szervezetei, cégei által fenntartott alapítvány, amely
+          anyagi hátteret teremt a Linux kernel fejlesztésének.
+        </p>
       </div>
     </div>
+
+    <div class="row pt-5">
+      <div class="col-12"><h2>Tartalom:</h2></div>
+
+      <div class="col-md-4">
+        <a href="/elete">
+          <img class="img-thumbnail img-fluid mb-1" src="/elete.jpg" alt="Élete" />
+          <p>Élete</p>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="/linux">
+          <img class="img-thumbnail img-fluid mb-1" src="/linux.jpg" alt="Linux" />
+          <p>Linux</p>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="/git">
+          <img class="img-thumbnail img-fluid mb-1" src="/git.jpg" alt="Git" />
+          <p>Git</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-12"><h2>English summary:</h2></div>
+      <p>TODO</p>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-12"><h2>Forrás:</h2></div>
+      <ul class="ps-5">
+        <li>
+          Linus Torvalds: <a
+            class="link"
+            href="https://hu.wikipedia.org/wiki/Linus_Torvalds"
+            target="_blank"
+            rel="noopener noreferrer">Wikipédia</a
+          >
+          <li>
+            Képek: <a
+              class="link"
+              href="https://www.google.com/imghp"
+              target="_blank"
+              rel="noopener noreferrer">Google</a
+            >
+          </li>
+        </li>
+      </ul>
+    </div>
+
+    <style lang="scss">
+      @use '../styles/_colors.scss' as clr;
+
+      a {
+        color: black;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      li > a {
+        color: clr.$primary;
+      }
+    </style>
   </main>
 </Layout>
