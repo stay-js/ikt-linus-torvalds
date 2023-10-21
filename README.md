@@ -1,5 +1,7 @@
 # IKT 10. osztály 1. projekt: Linus Torvalds Élete
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b719edd0-25f9-46cc-935a-b4d116ac67a6/deploy-status)](https://app.netlify.com/sites/ikt-linus-torvalds/deploys)
+
 Készítette: Bottka Balázs, K.Papp Benjámin és [Nagy Zétény](https://znagy.hu)
 
 ## Telepítés:
