@@ -23,7 +23,7 @@ body {
 .link {
   text-decoration: none;
   color: #000;
-  background-image: linear-gradient(90deg, clr.$primary, clr.$secondary);
+  background-image: linear-gradient(90deg, clr.$amber-400, clr.$orange-600);
   background-size: 100% 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
@@ -31,19 +31,10 @@ body {
 
   &-dark {
     color: #fff;
-    background-image: linear-gradient(90deg, clr.$teal-50, clr.$teal-200);
+    background-image: linear-gradient(90deg, clr.$orange-50, clr.$orange-200);
   }
 
   &:hover {
     background-size: 0% 2px;
   }
-}
-
-.navbar,
-.footer {
-  background-color: clr.$primary;
-}
-
-.dropdown-item:is(:active, .active) {
-  background-color: clr.$primary;
 }
