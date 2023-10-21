@@ -20,6 +20,7 @@ import Layout from '~/layouts/layout.astro';
       <div class="col-md-8 mt-3 mt-md-0">
         <h1 class="mb-0">Linus Benedict Torvalds</h1>
         <p class="fw-bold">Helsinki, 1969. december 28.</p>
+
         <p>
           Linus Benedict Torvalds (<i>Helsinki, 1969. december 28.</i>) a népszerű, <b>Unix-szerű</b
           > operációs rendszer, a <b>Linux fejlesztésének elindítója</b>, jelenleg is egyik fő
@@ -39,7 +40,9 @@ import Layout from '~/layouts/layout.astro';
     </div>
 
     <div class="row pt-5">
-      <div class="col-12"><h2>Tartalom:</h2></div>
+      <div class="col-12">
+        <h2>Tartalom:</h2>
+      </div>
 
       <div class="col-md-4">
         <a href="/elete">
@@ -64,36 +67,51 @@ import Layout from '~/layouts/layout.astro';
     </div>
 
     <div class="row pt-5">
-      <div class="col-12"><h2>English summary:</h2></div>
-      <p>TODO</p>
+      <div class="col-12">
+        <h2>English summary:</h2>
+
+        <p>
+          Linus Benedict Torvalds (Helsinki, December 28, 1969) is the creator of the popular
+          Unix-like operating system, Linux, and is currently one of it's main developers. His
+          parents divorced at an early age, he was raised by his mother in Helsinki.
+        </p>
+        <p>
+          He has three daughters: Patricia, Daniela and Celeste. They have been living in the USA
+          since 1997. Linus is currently employed by the Linux Foundation. The foundation is
+          maintained by important organizations and companies in the industry, which creates a
+          financial background for the development of the Linux kernel.
+        </p>
+      </div>
     </div>
 
     <div class="row pt-5">
-      <div class="col-12"><h2>Forrás:</h2></div>
-      <ul class="ps-5">
-        <li>
-          Linus Torvalds: <a
-            class="link"
-            href="https://hu.wikipedia.org/wiki/Linus_Torvalds"
-            target="_blank"
-            rel="noopener noreferrer">Wikipédia</a
-          >
+      <div class="col-12">
+        <h2>Forrás:</h2>
+        <ul>
           <li>
-            Képek: <a
+            Linus Torvalds: <a
               class="link"
-              href="https://www.google.com/imghp"
+              href="https://hu.wikipedia.org/wiki/Linus_Torvalds"
               target="_blank"
-              rel="noopener noreferrer">Google</a
+              rel="noopener noreferrer">Wikipédia</a
             >
+            <li>
+              Képek: <a
+                class="link"
+                href="https://www.google.com/imghp"
+                target="_blank"
+                rel="noopener noreferrer">Google</a
+              >
+            </li>
           </li>
-        </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   </main>
 </Layout>
 
 <style lang="scss">
-  @use '../styles/_colors.scss' as clr;
+  @use '../styles/colors' as clr;
 
   a {
     color: black;
