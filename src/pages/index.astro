@@ -3,7 +3,7 @@ import Layout from '~/layouts/layout.astro';
 ---
 
 <Layout
-  path=""
+  path="/"
   title="Kezdőlap"
   description=" Linus Benedict Torvalds (Helsinki, 1969. december 28.) a népszerű, Unix-szerű operációs rendszer, a Linux fejlesztésének elindítója, jelenleg is egyik fő fejlesztője. Szülei korán elváltak, Linust az anyja Helsinkiben nevelte fel. Anyanyelve a svéd, de finnül is anyanyelvi szinten beszél."
 >
@@ -46,21 +46,31 @@ import Layout from '~/layouts/layout.astro';
 
       <div class="col-md-4">
         <a href="/elete">
-          <img class="img-thumbnail img-fluid mb-1" src="/elete.jpg" alt="Élete" />
+          <img
+            class="img-thumbnail img-fluid mb-1"
+            src="/elete.jpg"
+            alt="Linus Benedict Torvalds"
+            title="Linus Benedict Torvalds élete"
+          />
           <p>Élete</p>
         </a>
       </div>
 
       <div class="col-md-4">
         <a href="/linux">
-          <img class="img-thumbnail img-fluid mb-1" src="/linux.jpg" alt="Linux" />
+          <img
+            class="img-thumbnail img-fluid mb-1"
+            src="/linux.jpg"
+            alt="Linux Logo"
+            title="Linux"
+          />
           <p>Linux</p>
         </a>
       </div>
 
       <div class="col-md-4">
         <a href="/git">
-          <img class="img-thumbnail img-fluid mb-1" src="/git.jpg" alt="Git" />
+          <img class="img-thumbnail img-fluid mb-1" src="/git.jpg" alt="Git Logo" title="Git" />
           <p>Git</p>
         </a>
       </div>

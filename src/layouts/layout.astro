@@ -53,7 +53,7 @@ const { path, title, description } = Astro.props as {
     <meta property="og:description" content={description} />
     <meta name="twitter:description" content={description} />
 
-    <meta property="og:url" content={`linus-torvalds.znagy.hu${path}`} />
+    <meta property="og:url" content={`linus-torvalds.znagy.hu${path === '/' ? '' : path}`} />
 
     <meta name="generator" content={Astro.generator} />
 

@@ -29,7 +29,7 @@ const { path } = Astro.props as { path: string };
             <li class="nav-item">
               <a
                 href={item.path}
-                class={clsx('nav-link text-light', path === item.path && 'active')}
+                class={clsx('nav-link text-white fw-medium', path === item.path && 'active')}
                 {...(path === item.path && { 'aria-current': 'page' })}
               >
                 {item.name}
