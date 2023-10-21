@@ -1,0 +1,19 @@
+{
+  "name": "ikt-linus-torvalds",
+  "type": "module",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.7",
+    "astro": "^3.3.2",
+    "clsx": "^2.0.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
