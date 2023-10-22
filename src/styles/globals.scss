@@ -86,3 +86,18 @@ h6 {
     transform: translateY(0);
   }
 }
+
+.table-of-content {
+  position: sticky;
+  top: 2rem;
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+
+  a {
+    font-size: 0.925rem;
+
+    &.active {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import clsx from 'clsx';
 
 export const TableOfContent: React.FC = () => {
   const [activeHeading, setActiveHeading] = useState<string | null>();
@@ -34,18 +35,14 @@ export const TableOfContent: React.FC = () => {
   }, [headings]);
 
   return (
-    <aside style={{ position: 'sticky', top: '2rem' }}>
+    <aside className="table-of-content">
       <h2 className="fs-3">Tartalom</h2>
       <ul>
         {headings.map(({ id, text, level }) => (
           <li key={id} style={{ marginLeft: `${(level - 2) * 1.25}rem` }}>
             <a
               href={`#${id}`}
-              className="text-black link link-reverse"
-              style={{
-                fontSize: '0.925rem',
-                fontWeight: activeHeading === id ? 'bold' : 'normal',
-              }}
+              className={clsx('text-black link link-reverse', activeHeading === id && 'active')}
             >
               {text}
             </a>
