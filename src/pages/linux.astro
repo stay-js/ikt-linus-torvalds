@@ -1,5 +1,6 @@
 ---
 import Layout from '~/layouts/layout.astro';
+import { TableOfContent } from '~/components/table-of-conent';
 ---
 
 <Layout path="/linux" title="Linux" description="TODO">
@@ -7,6 +8,154 @@ import Layout from '~/layouts/layout.astro';
     <div class="row" transition:name="title">
       <div class="col-12">
         <h1 class="text-center mt-5">Linux</h1>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <div class="col-10">
+        <div class="row">
+          <div class="col-12">
+            <p>
+              A Linux operációs rendszer, a szabad és a nyílt forráskódú szoftverek egyik
+              legismertebb példája.
+            </p>
+            <p>
+              A „Linux” elnevezés szigorú értelemben véve a Linux-rendszermagot jelenti, amelyet
+              Linus Torvalds kezdett el fejleszteni 1991-ben. A köznyelvben mégis gyakran a teljes
+              Unix-szerű operációs rendszerre utalnak vele, amely a Linux-rendszermagra és az
+              1983-ban, Richard Matthew Stallman vezetésével indult GNU projekt keretében született
+              alapprogramokra épül. A Linux pontosabb neve ebben az értelemben GNU/Linux.
+            </p>
+            <p>
+              A „Linux” kifejezést használják Linux-disztribúciókra (terjesztések) is, ám ilyenkor
+              általában a disztribúció nevét is hozzáteszik. Egy-egy disztribúció olyan
+              összeállítás, amely az alaprendszeren túl bizonyos szempontok alapján összeválogatott
+              és testre szabott programokat tartalmaz.
+            </p>
+            <p>
+              A Linux a szerverek és személyi számítógépek mellett - elsősorban nyíltságának
+              köszönhetően - megtalálható sok összetett elektronikus eszközben, így hálózati
+              eszközökben (például routerek), hordozható eszközökben (például mobiltelefonok,
+              okostelefonok, PDA-k, hordozható hanglejátszók, órák), háztartási gépekben,
+              szórakoztató elektronikai berendezésekben (például asztali DVD-lejátszók,
+              videójáték-konzolok, set-top-boxok) is. Bizonyos területeken (például webszerverek,
+              szuperszámítógépek esetében) a legmeghatározóbb operációs rendszernek számít, ám az
+              utóbbi években személyi számítógépekre (asztali és hordozható gépek) is egyre
+              szélesebb körben telepítenek valamilyen Linux disztribúciót.
+            </p>
+          </div>
+          <div class="col-12">
+            <h2 id="tortenete">Története</h2>
+
+            <h3 id="a-gnu-projekt">A GNU projekt</h3>
+            <p>
+              Világszerte sok programozót inspirált az 1983-ban indított GNU Projekt, amelyet
+              Richard M. Stallman (RMS) indított útjára. A szabad szoftveres megmozdulás célja az
+              volt, hogy szabadon felhasználható, minőségi szoftvereket készítsen és terjesszen.
+              Elkezdődött a GNU operációs rendszer, a GNU Hurd fejlesztése is, de a kilátások
+              szerint nem lehetett a megjelenésére számítani néhány éven belül (2015-ben jelent
+              meg).
+            </p>
+
+            <h3 id="az-1980-as-evek-pc-s-operacios-rendszerei">
+              Az 1980-as évek PC-s operációs rendszerei
+            </h3>
+            <p>
+              A 80-as évek elejétől az egyik meghatározó PC-s operációs rendszer a DOS (Disk
+              Operating System) volt. Az IBM a zárt forráskódú MS-DOS operációs rendszerrel
+              szállította személyi számítógépeit, melyek később elárasztották a világot. Az akkori
+              Apple Macintosh gépek (a szintén zárt forrású MacOS operációs rendszerrel) jobbak
+              voltak az IBM PC-knél, de magasabb áruk és a perifériák alacsony választéka meggátolta
+              őket a szélesebb körű elterjedésben.
+            </p>
+
+            <h3 id="a-unix-operacius-rendszere">A UNIX operációs rendszer</h3>
+            <p>
+              Egy másik, a 80-as években használt operációs rendszer a Unix volt. Jó tulajdonságai
+              ellenére főként az intézmények, kutatási központok, iskolák operációs rendszere volt,
+              részben az ára miatt, részben mert eredetileg sem otthoni felhasználásra, hanem
+              nagyszámítógépekre tervezték. A UNIX operációs rendszer forráskódja zárt volt, ahhoz
+              néhány kivételezett intézményen kívül mások nem férhettek hozzá
+            </p>
+
+            <h3 id="a-minix-operacios-rendszer">A MINIX operációs rendszer</h3>
+            <p>
+              A szakemberek természetesen megkísérelték a UNIX előnyeit átültetni az olcsóbb PC-re.
+              Az egyik ilyen próbálkozás 1987-ben a MINIX volt, megalkotója Andrew S. Tanenbaum
+              Hollandiában élő, USA állampolgárságú professzor és kernelszakértő. A MINIX
+              fejlesztése a nulláról kezdődött, azaz készítője nem egy meglevő operációs rendszert
+              használt fel alapjául. Tanenbaum a rendszert oktatási céllal írta, azt szerette volna,
+              ha tanítványai ezen a MINIX-en tanulják meg az operációs rendszerek működésének,
+              felépítésének alapjait. A MINIX rendszert az Intel 8086 mikroprocesszoraira
+              fejlesztette, amelyek abban az időben elárasztották a világ számítástechnikai piacát.
+            </p>
+            <p>
+              A MINIX nem volt kimagaslóan jó operációs rendszer, de elvitathatatlan előnye, hogy
+              nyílt volt a forráskódja. Bárki, aki megvásárolta Tanenbaum Operációs rendszerek című
+              könyvét, hozzájuthatott a mintegy 12 000 sor MINIX kódhoz (a könyv második kiadásakor
+              már több mint 27 000 sor), amely egy működő operációs rendszer forráskódja volt.
+            </p>
+            <p>
+              Ez volt az első alkalom, hogy a nagyközönség elolvashatta egy operációs rendszer
+              forrását, hiszen a többi rendszer forráskódját a gyártók szigorúan védelmezték a
+              nyilvánosságtól. Tanenbaum munkájának köszönhetően programozók és egyetemisták tömegei
+              tanulmányozhatták a MINIX operációs rendszerek működését. Ennek hatására ugrásszerűen
+              megnőtt a téma népszerűsége, egyre-másra alakultak olyan levelezési listák, ahol az
+              érdeklődők az operációs rendszerek készítésének kérdéseiről beszélgethettek. Az egyik
+              olvasó Linus Torvalds, svéd nemzetiségű finn egyetemista volt.
+            </p>
+
+            <h3 id="a-linux-szuletese">A Linux születése</h3>
+            <p>
+              1991-ben Linus a Helsinki Egyetem számítástechnikai tudományok karának másodéves
+              hallgatója volt. Linus autodidakta hacker volt, saját operációs rendszert szeretett
+              volna írni, mivel a GNU Hurd-re várhatóan néhány évet várni kellett volna. A 21 éves
+              egyetemista a Intel 80386-os processzor védett módú (protected mode), feladat-váltó
+              (task-switching) lehetőségeit szerette volna felfedezni. Ez körülbelül 1991 nyarának
+              elején lehetett, a pontos dátumra maga Linus sem emlékszik. Egy biztos: egy e-mail
+              tanúsága szerint 1991. július 3-án már a POSIX szabvány után érdeklődött az
+              interneten, így ekkor már futhatott nála egy kezdetleges rendszer. A program
+              fejlesztése a Tanenbaum-féle Minix alatt történt, eleinte assembly nyelven.
+            </p>
+            <p>
+              1991. augusztus 25-én Linus egy mostanra már legendássá vált levelet küldött a MINIX
+              hírcsoportba. A levél magyar nyelvű fordítása:
+            </p>
+            <p>
+              „Üdv minden Minix-felhasználónak odaát! Egy (ingyenes) operációs rendszert csinálok
+              (csak hobbiból, nem lesz olyan nagy és profi, mint a gnu) a 386-os (486-os)
+              AT-klónokhoz. Április óta érlelem, és lassan elkészül. Szeretnék visszajelzéseket
+              arról, hogy mi tetszik és mi nem tetszik a Minixben az embereknek, mivel az én
+              operációs rendszerem némileg hasonlít rá (többek között (gyakorlati okokból) azonos a
+              fájlrendszer fizikai kiosztása).
+            </p>
+            <p>
+              A bash (1.08) és a gcc (1.40) programokat már átültettem, és úgy tűnik, működik a
+              dolog. Ez azt jelenti, hogy pár hónapon belül valami hasznosat fogok kapni, és
+              kíváncsi lennék, milyen funkciókat szeretnének legtöbben. Minden javaslatot szívesen
+              veszek, azt viszont nem ígérem, hogy meg is valósítom őket :-)
+            </p>
+            <p>- Linus (torvalds@kruuna.helsinki.fi)</p>
+            <p>
+              Ui.: Igen! Nincs benne Minix-kód és többszálú fs-sel rendelkezik. Nem hordozható (a
+              386 feladatváltást használja stb.), és lehet, hogy soha nem is fog az
+              AT-merevlemezeken kívül bármi mást támogatni, minthogy nekem csak ez van :-(.”
+            </p>
+            <p>
+              Így kezdődött a Linux története. Linus levele számos programozót inspirált. Andrew S.
+              Tanenbaum - a MINIX operációs rendszer atyja - Hollandiában élő egyetemi tanár,
+              operációsrendszer-kutató, egyik későbbi levelében azt írta, hogy a Linux elavult, mert
+              monolitikus, ezért a professzor nem jósolt neki nagy jövőt. A levélből óriási vita
+              lett. Ennek ellenére a Linux az elmúlt 21 évben hihetetlen fejlődésen ment keresztül,
+              és még mindig monolitikus, pontosabban hibrid (távol áll a mikrokerneltől, de
+              betölthető-eltávolítható modulokra osztható a funkciók többsége).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-2">
+        <TableOfContent client:only="react" />
       </div>
     </div>
   </main>

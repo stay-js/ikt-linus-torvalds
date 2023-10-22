@@ -15,6 +15,10 @@ body {
   background-color: rgb(240 253 250 / 0.35);
 }
 
+h3 {
+  font-size: 1.45rem;
+}
+
 ::selection {
   background-color: clr.$secondary;
   color: #fff;
@@ -29,12 +33,20 @@ body {
   background-position: left bottom;
   transition: background-size 200ms ease;
 
+  &:hover {
+    background-size: 0% 2px;
+  }
+
   &-dark {
     color: #fff;
     background-image: linear-gradient(90deg, clr.$orange-50, clr.$orange-200);
   }
 
-  &:hover {
+  &-reverse {
     background-size: 0% 2px;
+
+    &:hover {
+      background-size: 100% 2px;
+    }
   }
 }
