@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { TbArrowUp } from 'react-icons/tb';
 import clsx from 'clsx';
-import style from './scrollTop.module.scss';
+import style from './style.module.scss';
 
 export const ScrollTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
