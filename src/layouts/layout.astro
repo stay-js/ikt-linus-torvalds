@@ -1,5 +1,6 @@
 ---
 import { ViewTransitions } from 'astro:transitions';
+import { ScrollTop } from '~/components/scroll-top';
 import Navigation from '~/components/navigation.astro';
 import Footer from '~/components/footer.astro';
 
@@ -77,5 +78,7 @@ const { path, title, description } = Astro.props as {
     </div>
 
     <Footer transition:persist />
+
+    <ScrollTop client:only="react" />
   </body>
 </html>

@@ -1,0 +1,25 @@
+@use '../../styles/colors' as clr;
+
+.scroll-top {
+  position: fixed;
+  z-index: 100;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  display: grid;
+  place-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 100%;
+  background-color: clr.$orange-500;
+  transform: translateY(5rem);
+  transition: all 200ms ease;
+
+  &:hover {
+    background-color: clr.$orange-700;
+  }
+}
+
+.active {
+  transform: translateY(0);
+}
