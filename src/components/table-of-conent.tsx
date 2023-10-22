@@ -38,7 +38,7 @@ export const TableOfContent: React.FC = () => {
       <h2 className="fs-3">Tartalom</h2>
       <ul>
         {headings.map(({ id, text, level }) => (
-          <li key={id} style={{ marginLeft: `${level - 2}rem` }}>
+          <li key={id} style={{ marginLeft: `${(level - 2) * 1.25}rem` }}>
             <a
               href={`#${id}`}
               className="text-black link link-reverse"
