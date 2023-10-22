@@ -13,19 +13,27 @@ import { TableOfContent } from '~/components/table-of-conent';
 
     <div class="row pt-5">
       <div class="col-10">
-        <div class="row">
+        <section class="row">
           <div class="col-12">
             <h2 id="todo">Todo</h2>
             <p>
               <b>Címekre kerüljön ID</b> (<i>hogy megjelenjen a table of content-ben</i>): cím
               kisbetűkkel, ékezetek nélkül, szőköz helyett kötőjel!
             </p>
+            <p>Új <b>h2</b> kerüljön új <b>col</b>-ba!</p>
           </div>
-        </div>
+        </section>
+
+        <section class="row pt-5">
+          <div class="col-12">
+            <h2 id="english-summary">English summary</h2>
+            <p>Todo</p>
+          </div>
+        </section>
       </div>
 
       <div class="col-2">
-        <TableOfContent client:only="react" />
+        <TableOfContent client:only="react" transition:name="table-of-content" />
       </div>
     </div>
   </main>
