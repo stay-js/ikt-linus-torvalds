@@ -226,166 +226,166 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
           </div>
           <div class="col-12">
             <h2 id="git-parancsok">Git parancsok</h2>
-            <table class="table table-light table-striped">              
+            <table class="table table-light table-striped">
               <caption>Néhány git parancs</caption>
-                            <thead class="text-center">
-                              <tr class="table-active">
-                                <th>Parancsok</th>
-                                <th>Funkciójuk</th>
-                                <th>Példará</th>
-                              </tr>
-                            </thead>
-                            <tbody class="align-middle">
-                              <tr>
-                                <th>git config</th>
-                                <td>Alap beállitások megadása, hogy a git verzió felvegye ki mit csinált.</td>
-                                <td
-                                  ><tt>git config --global user.name "[név]"</tt><br /><tt
-                                    >git config --global user.email "[email]"</tt
-                                  ></td
-                                >
-                              </tr>
-                              <tr>
-                                <th>git init</th>
-                                <td>Inicializál egy létező git repo-t.</td>
-                                <td><tt>git init</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git clone</th>
-                                <td>Visszahoz egy repo-t a megadott url-ről.</td>
-                                <td><tt>git [url]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git status</th>
-                                <td>Megmutatja az edig commit-olt fáljokat a színpadon.</td>
-                                <td><tt>git status</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git add</th>
-                                <td
-                                  >Hozzáadja a fáljt a következő commit-odhoz , * al mindent egyszera ami a
-                                  könyvtrban van.</td
-                                >
-                                <td><tt>git [fáljnév]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git rm</th>
-                                <td>Letöröli a fáljt és hozzáadja a törlést a színpadhoz.</td>
-                                <td><tt>git rm [fáljnév]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git mv</th>
-                                <td>Áthelyez, átnevez egy fáljt és hozzáadja a változást a színpadhoz.</td>
-                                <td><tt>git mv [honna][hová]</tt></td>
-                              </tr>
-                              <tr>
-                                <th rowspan="2">git reset</th>
-                                <td rowspan="2"
-                                  >Kivesszi a fáljt a következő commit-odból, --hard -al vissza álitja a
-                                  munkakönyvtárad a megadott commitra és törli a színpadot.</td
-                                >
-                                <td><tt>git reset [fáljnév]</tt></td>
-                              </tr>
-                              <tr><td><tt>git reset --hard [commit]</tt></td></tr>
-                              <tr>
-                                <th>git diff</th>
-                                <td
-                                  >Megmutatja mi változot, de még nincs a színpadra adva, --staged: megmutatja
-                                  mivan színpadon, de nincs még commit-olva.</td
-                                >
-                                <td><tt>git diff --staged</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git commit</th>
-                                <td>A színbadonlévő dolgaidat commitolja a repo-ba.</td>
-                                <td><tt>git commit -m "[72 karakter hoszú leírás]"</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git branch</th>
-                                <td
-                                  >ki listáza az elágazásokat a repo-ba, Létre hoz egy új elágazást a megadott
-                                  nével.</td
-                                >
-                                <td><tt>git branch [elágazás neve]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git checkout</th>
-                                <td>Át lépé a munkakönyvtáradat egy másik elágazásban a repo-n.</td>
-                                <td><tt>git checkout [elágazás neve]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git merge</th>
-                                <td
-                                  >A megadott elágazást hozzá addja abba amiben éppen vagy, a git fetch [Alias]
-                                  -et lehuzza a remote repo-dba</td
-                                >
-                                <td><tt>git merge [elágazás neve/Alias]</tt></td>
-                              </tr>
-                              <tr>
-                                <th rowspan="2">git log</th>
-                                <td rowspan="2">
-                                  Ki listáza az épen aktuális commitokat, meg mutatja melyik commitok nincsnek a
-                                  2. elágazáson ,de igen az 1.-n, --follow -al egy megadott fálj változásait
-                                  mutaja.
-                                </td>
-                                <td><tt>git log [elagázas2]..[elagázas1]</tt></td>
-                              </tr>
-                              <tr>
-                                <td><tt>git log --follow [fáljnév]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git show</th>
-                                <td
-                                  >Megmutatja a megadott (alapból a fej) objektum adatait (változik fajtánként).</td
-                                >
-                                <td><tt>git show [objektum neve]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git remote add</th>
-                                <td>Lehoza a megadott repot a megadot névként.</td>
-                                <td><tt>git remote ad [Alias][URL]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git fetch</th>
-                                <td>Le hozza a remot repo-ról a változásokat, de nem tölti le.</td>
-                                <td><tt>git fetch [Alias]</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git pull</th>
-                                <td>Le huzza a változásokat (fetch+merge).</td>
-                                <td><tt>git pull</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git push</th>
-                                <td>Fel tolja a színpadon lévő változtásokat a megfeleló elágazásba.</td>
-                                <td><tt>git push</tt></td>
-                              </tr>
-                              <tr>
-                                <th>git rebase</th>
-                                <td>Át írja a jelenlegi helyed commitojait a megadot elágazásba.</td>
-                                <td><tt>git rebase [elágazás neve]</tt></td>
-                              </tr>
-                              <tr>
-                                <th rowspan="4">git stash</th>
-                                <td
-                                  >Elmenti a változásokat és a színpadot lokálisan, ha már kiadtad egyszer új
-                                  bekezdésként menti el.</td
-                                >
-                                <td><tt>git stash</tt></td>
-                              </tr>
-                              <tr>
-                                <td>Ki listáza az edig elrakot változásokat.</td>
-                                <td><tt>git stash list</tt></td>
-                              </tr>
-                              <tr>
-                                <td>Eldobja a legfelső elrakot változást.</td>
-                                <td><tt>git stash pop</tt></td>
-                              </tr>
-                              <tr>
-                                <td>Eldobja az elrakot változást.</td>
-                                <td><tt>git stash drop</tt></td>
-                              </tr>
-                            </tbody>              
+              <thead class="text-center">
+                <tr class="table-active">
+                  <th>Parancsok</th>
+                  <th>Funkciójuk</th>
+                  <th>Példará</th>
+                </tr>
+              </thead>
+              <tbody class="align-middle">
+                <tr>
+                  <th>git config</th>
+                  <td>Alap beállitások megadása, hogy a git verzió felvegye ki mit csinált.</td>
+                  <td
+                    ><tt>git config --global user.name "[név]"</tt><br /><tt
+                      >git config --global user.email "[email]"</tt
+                    ></td
+                  >
+                </tr>
+                <tr>
+                  <th>git init</th>
+                  <td>Inicializál egy létező git repo-t.</td>
+                  <td><tt>git init</tt></td>
+                </tr>
+                <tr>
+                  <th>git clone</th>
+                  <td>Visszahoz egy repo-t a megadott url-ről.</td>
+                  <td><tt>git [url]</tt></td>
+                </tr>
+                <tr>
+                  <th>git status</th>
+                  <td>Megmutatja az edig commit-olt fáljokat a színpadon.</td>
+                  <td><tt>git status</tt></td>
+                </tr>
+                <tr>
+                  <th>git add</th>
+                  <td
+                    >Hozzáadja a fáljt a következő commit-odhoz , * al mindent egyszera ami a
+                    könyvtrban van.</td
+                  >
+                  <td><tt>git [fáljnév]</tt></td>
+                </tr>
+                <tr>
+                  <th>git rm</th>
+                  <td>Letöröli a fáljt és hozzáadja a törlést a színpadhoz.</td>
+                  <td><tt>git rm [fáljnév]</tt></td>
+                </tr>
+                <tr>
+                  <th>git mv</th>
+                  <td>Áthelyez, átnevez egy fáljt és hozzáadja a változást a színpadhoz.</td>
+                  <td><tt>git mv [honna][hová]</tt></td>
+                </tr>
+                <tr>
+                  <th rowspan="2">git reset</th>
+                  <td rowspan="2"
+                    >Kivesszi a fáljt a következő commit-odból, --hard -al vissza álitja a
+                    munkakönyvtárad a megadott commitra és törli a színpadot.</td
+                  >
+                  <td><tt>git reset [fáljnév]</tt></td>
+                </tr>
+                <tr><td><tt>git reset --hard [commit]</tt></td></tr>
+                <tr>
+                  <th>git diff</th>
+                  <td
+                    >Megmutatja mi változot, de még nincs a színpadra adva, --staged: megmutatja
+                    mivan színpadon, de nincs még commit-olva.</td
+                  >
+                  <td><tt>git diff --staged</tt></td>
+                </tr>
+                <tr>
+                  <th>git commit</th>
+                  <td>A színbadonlévő dolgaidat commitolja a repo-ba.</td>
+                  <td><tt>git commit -m "[72 karakter hoszú leírás]"</tt></td>
+                </tr>
+                <tr>
+                  <th>git branch</th>
+                  <td
+                    >ki listáza az elágazásokat a repo-ba, Létre hoz egy új elágazást a megadott
+                    nével.</td
+                  >
+                  <td><tt>git branch [elágazás neve]</tt></td>
+                </tr>
+                <tr>
+                  <th>git checkout</th>
+                  <td>Át lépé a munkakönyvtáradat egy másik elágazásban a repo-n.</td>
+                  <td><tt>git checkout [elágazás neve]</tt></td>
+                </tr>
+                <tr>
+                  <th>git merge</th>
+                  <td
+                    >A megadott elágazást hozzá addja abba amiben éppen vagy, a git fetch [Alias]
+                    -et lehuzza a remote repo-dba</td
+                  >
+                  <td><tt>git merge [elágazás neve/Alias]</tt></td>
+                </tr>
+                <tr>
+                  <th rowspan="2">git log</th>
+                  <td rowspan="2">
+                    Ki listáza az épen aktuális commitokat, meg mutatja melyik commitok nincsnek a
+                    2. elágazáson ,de igen az 1.-n, --follow -al egy megadott fálj változásait
+                    mutaja.
+                  </td>
+                  <td><tt>git log [elagázas2]..[elagázas1]</tt></td>
+                </tr>
+                <tr>
+                  <td><tt>git log --follow [fáljnév]</tt></td>
+                </tr>
+                <tr>
+                  <th>git show</th>
+                  <td
+                    >Megmutatja a megadott (alapból a fej) objektum adatait (változik fajtánként).</td
+                  >
+                  <td><tt>git show [objektum neve]</tt></td>
+                </tr>
+                <tr>
+                  <th>git remote add</th>
+                  <td>Lehoza a megadott repot a megadot névként.</td>
+                  <td><tt>git remote ad [Alias][URL]</tt></td>
+                </tr>
+                <tr>
+                  <th>git fetch</th>
+                  <td>Le hozza a remot repo-ról a változásokat, de nem tölti le.</td>
+                  <td><tt>git fetch [Alias]</tt></td>
+                </tr>
+                <tr>
+                  <th>git pull</th>
+                  <td>Le huzza a változásokat (fetch+merge).</td>
+                  <td><tt>git pull</tt></td>
+                </tr>
+                <tr>
+                  <th>git push</th>
+                  <td>Fel tolja a színpadon lévő változtásokat a megfeleló elágazásba.</td>
+                  <td><tt>git push</tt></td>
+                </tr>
+                <tr>
+                  <th>git rebase</th>
+                  <td>Át írja a jelenlegi helyed commitojait a megadot elágazásba.</td>
+                  <td><tt>git rebase [elágazás neve]</tt></td>
+                </tr>
+                <tr>
+                  <th rowspan="4">git stash</th>
+                  <td
+                    >Elmenti a változásokat és a színpadot lokálisan, ha már kiadtad egyszer új
+                    bekezdésként menti el.</td
+                  >
+                  <td><tt>git stash</tt></td>
+                </tr>
+                <tr>
+                  <td>Ki listáza az edig elrakot változásokat.</td>
+                  <td><tt>git stash list</tt></td>
+                </tr>
+                <tr>
+                  <td>Eldobja a legfelső elrakot változást.</td>
+                  <td><tt>git stash pop</tt></td>
+                </tr>
+                <tr>
+                  <td>Eldobja az elrakot változást.</td>
+                  <td><tt>git stash drop</tt></td>
+                </tr>
+              </tbody>
             </table>
             <div class="col-12">
               <h2 id="a-git-kulonfele-megvalositasai">A git különféle megvalósításai</h2>
@@ -444,12 +444,12 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 tárolótartalom megjelenítést.
               </p>
               <ImageWithCaption
-              float="right"
-              src="/gerrit.png"
-              alt="gerrit logo"
-              caption="Gerrit logo"
-              width={200}
-            />
+                float="right"
+                src="/gerrit.png"
+                alt="gerrit logo"
+                caption="Gerrit logo"
+                width={200}
+              />
               <h3 id="kulonfele-verziok">Különféle verziók</h3>
               <ul>
                 <li>
@@ -574,7 +574,37 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
             <section class="row pt-5">
               <div class="col-12">
                 <h2 id="english-summary">English summary</h2>
-                <p>TODO</p>
+                <p>
+                  Git is an open-source distributed version control system initially developed by
+                  Linus Torvalds for the Linux kernel project after the BitKeeper version control
+                  system, previously used, lost its free licensing. Torvalds aimed to create a
+                  version control system that effectively supported the needs of Linux kernel
+                  development.
+                </p>
+                <p>
+                  Linus Torvalds created Git in 2005 due to issues faced during the development of
+                  the Linux kernel. BitKeeper, the previous version control system, had withdrawn
+                  its free license, leading Torvalds to develop a version control system that met
+                  his requirements.
+                </p>
+                <p>
+                  Git is widely used for software development and project management, particularly
+                  since the emergence of online platforms like GitHub. It has become an essential
+                  tool in the software development field and is used in various other projects as
+                  well.
+                </p>
+                <p>
+                  Git is the most popular distributed version control system among developer
+                  communities. Many developers use Git as their primary version control tool, and it
+                  is also employed by service providers like GitHub, SourceForge, Bitbucket, and
+                  GitLab.
+                </p>
+                <p>
+                  Git's design principles include strong support for non-linear development,
+                  distributed development, compatibility with existing systems and protocols,
+                  efficient management of large projects, cryptographic verification of history,
+                  component-based design, and customizable merging strategies.
+                </p>
               </div>
             </section>
           </div>
