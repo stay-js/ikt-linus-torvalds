@@ -4,7 +4,11 @@ import { TableOfContent } from '~/components/table-of-conent';
 import ImageWithCaption from '~/components/image-with-caption.astro';
 ---
 
-<Layout path="/git" title="Git" description="TODO">
+<Layout
+  path="/git"
+  title="Git"
+  description="A Git egy elosztott verziókezelő rendszer, amelyet a számítógépes fájlok változásainak nyomon követésére és a szoftverfejlesztők együttműködésének koordinálására használnak. A Git a Linux kernel fejlesztésére született Linus Torvalds kezdeményezésére, miután a korábbi verziókezelő rendszer, a BitKeeper, elvesztette az ingyenes licencelést."
+>
   <main class="container">
     <div class="row" transition:name="title">
       <div class="col-12">
@@ -17,7 +21,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
         <section class="row">
           <div class="col-12">
             <h2 id="a-git-altalanos-tudnivaloi">A Git általános tudnivalói</h2>
-            <h3 id="mi-az-a-git?">Mi az a git?</h3>
+
             <ImageWithCaption
               float="left"
               src="/gitnotext.jpg"
@@ -25,6 +29,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               caption="Git logo"
               width={120}
             />
+            <h3 id="mi-az-a-git">Mi az a git?</h3>
             <p>
               A <strong>Git</strong> egy elosztott verziókezelő rendszer, amelyet a számítógépes
               fájlok változásainak nyomon követésére és a szoftverfejlesztők együttműködésének
@@ -35,13 +40,15 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               rendszert kívánt létrehozni, amely hatékonyan támogatja a Linux kernel fejlesztéséhez
               szükséges igényeket.
             </p>
-            <h3 id="miert-keszult?">Miért készült?</h3>
+
+            <h3 id="miert-keszult">Miért készült?</h3>
             <p>
               Linus Torvalds hozta létre eredetileg a Gitet 2005-ben a Linux kernel fejlesztése
               során tapasztalt problémák miatt. Ekkor a <em>BitKeeper</em> nevű verziókezelő
               rendszer ingyenes licencét visszavonták, és Torvalds úgy döntött, hogy saját
               verziókezelő rendszert fejleszt, amely megfelel az igényeinek.
             </p>
+
             <h3 id="roviden-a-gitrol">Röviden a gitről</h3>
             <p>
               Összességében a Git egy olyan verziókezelő rendszer, amely Linus Torvalds által
@@ -51,8 +58,10 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               projekt menedzselésében is.
             </p>
           </div>
+
           <div class="col-12">
             <h2 id="a-git-tortenete">A git története</h2>
+
             <h3 id="kezdetek">Kezdetek</h3>
             <p>
               Linus Torvalds elkezdi kifejleszteni a Git verziókezelő rendszert. Torvalds
@@ -60,22 +69,26 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               fejlesztését kezelte, és úgy érezte, hogy szükség van egy hatékonyabb és gyorsabb
               megoldásra.
             </p>
+
             <h3 id="elnevezese">Elnevezése</h3>
             <p>
               Az elnevezése, "<em>Git</em>", Torvalds részéről ironikus volt, és eredetileg a brit
               angol szlengben "kellemetlen embert" jelent. A Git elnevezése és névválasztása
               Torvalds humoros hozzáállását tükrözi a projektjéhez.
             </p>
+
             <h3 id="elso-publikus-kiadas">Első publikus kiadás</h3>
             <p>
               Linus Torvalds 2005. áprilisában jelentette be a Git első nyilvános kiadását. Az
               indulás során a Git inkább egy belső projekt volt a Linux kernel fejlesztéséhez.
             </p>
+
             <h3 id="gyors-nepszeruseg">Gyors népszerűség</h3>
             <p>
               A Git gyorsan népszerűvé vált a fejlesztői közösségek körében. A Linux kernel közösség
               mellett más nyílt forráskódú projektjeke is elkezdték használni a Gitet.
             </p>
+
             <ImageWithCaption
               float="right"
               src="/github.jpg"
@@ -84,13 +97,13 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               width={120}
             />
             <h3 id="github-alapitasa">GitHub alapítása</h3>
-
             <p>
               2008-ban <em>Tom Preston-Werner, Chris Wanstrath és PJ Hyett</em> megalapították a
               GitHubot, egy online platformot, amely lehetővé tette a Git alapú verziókezelési
               projektek közös tárolását és együttműködését. Ez hozzájárult a Git és a GitHub
               népszerűségének robbanásszerű növekedéséhez.
             </p>
+
             <h3 id="git-elterjedese">Git elterjedése</h3>
             <p>
               A Git tovább terjedt és az ipari normává vált a szoftverfejlesztésben. Számos vállalat
@@ -98,6 +111,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               projekt és szoftverfejlesztési közösség által használt verziókezelő rendszer, ideértve
               a Linux kernel, a Python, a Ruby on Rails és sok más projektet.
             </p>
+
             <h3 id="a-git-kulonfele-hasznalata">A Git különféle használata</h3>
             <p>
               A Git azóta a legnépszerűbb elosztott verziókezelő rendszerré vált a fejlesztői
@@ -106,8 +120,10 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               és a GitLab, is használja a projektjeikhez.
             </p>
           </div>
+
           <div class="col-12">
             <h2 id="tervezese">Tervezése</h2>
+
             <ul>
               <li>
                 <strong>Nemlineáris fejlesztés erős támogatása</strong>: A Git erősen támogatja a
@@ -160,8 +176,10 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               </li>
             </ul>
           </div>
+
           <div class="col-12">
             <h2 id="a-git-adatszerkezet">A git adatszerkezet</h2>
+
             <h3 id="valtoztathato-index">Változtatható index</h3>
             <p>
               Az index (vagy más néven szakasz vagy gyorsítótár) egy olyan adatstruktúra, amely a
@@ -176,6 +194,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               caption="Git működés"
               width={350}
             />
+
             <h3 id="objektumadatbazis">Objektumadatbázis</h3>
             <ul>
               <li>
@@ -211,6 +230,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               könyvtárstruktúrában tárolódnak, amely megegyezik a hash érték első két karakterével.
               Az hash többi része az objektum fájlneveként szolgál.
             </p>
+
             <h3 id="falj-tarolasa">Fálj tarolása</h3>
             <p>
               A Git a fájl minden egyes változatát egyedi blobként tárolja, és a blobok közötti
@@ -224,17 +244,20 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               automatikus szemétgyűjtésére, amelyekre már nincsenek hivatkozások.
             </p>
           </div>
+
           <div class="col-12">
             <h2 id="git-parancsok">Git parancsok</h2>
+
             <table class="table table-light table-striped">
               <caption>Néhány git parancs</caption>
               <thead class="text-center">
                 <tr class="table-active">
-                  <th>Parancsok</th>
-                  <th>Funkciójuk</th>
-                  <th>Példará</th>
+                  <th>Parancs</th>
+                  <th>Leírás</th>
+                  <th>Használat</th>
                 </tr>
               </thead>
+
               <tbody class="align-middle">
                 <tr>
                   <th>git config</th>
@@ -432,9 +455,9 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 </li>
               </ul>
             </div>
+
             <div class="col-12">
               <h2 id="a-git-szervere">A git szerverek</h2>
-              <h3 id="altalanosan">Általánosan</h3>
               <p>
                 A Git szerverek olyan gépek vagy kiszolgálók, amelyeken Git-tárolókat üzemeltetnek,
                 és lehetővé teszik a Git kliensek számára, hogy ezekkel a tárolókkal
@@ -443,14 +466,15 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 amelyek további funkciókat kínálnak, például webes felületeken keresztüli
                 tárolótartalom megjelenítést.
               </p>
+
+              <h3 id="kulonfele-verziok">Különféle verziók</h3>
               <ImageWithCaption
                 float="right"
                 src="/gerrit.png"
-                alt="gerrit logo"
+                alt="Gerrit logo"
                 caption="Gerrit logo"
                 width={200}
               />
-              <h3 id="kulonfele-verziok">Különféle verziók</h3>
               <ul>
                 <li>
                   <strong>Gerrit</strong>: A Gerrit egy népszerű Git szerver, amely lehetővé teszi a
@@ -493,9 +517,11 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 </li>
               </ul>
             </div>
+
             <div class="col-12">
               <h2 id="a-git-sazbalyai">A Git szabályai</h2>
-              <h3 id="fo-ag ">Fő ág</h3>
+
+              <h3 id="fo-ag">Fő ág</h3>
               <p>
                 Az alapértelmezett ág, amelyet sok projekt a git init paranccsal hoz létre. Gyakran
                 az upstream távoli neve "origin", és az alapértelmezett távoli ág neve
@@ -503,6 +529,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 helyen a "main" vagy más ágneveket is alkalmaznak, különösen a társadalmi és
                 politikai okokból.
               </p>
+
               <h3 id="commitok">Commitok</h3>
               <p>
                 Az alapelv az, hogy a kitolt commitokat nem szabad felülírni. Ehelyett vissza kell
@@ -510,6 +537,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 szigorúbb ellenőrzést tesz lehetővé és segít megőrizni a megosztott előzmények
                 integritását.
               </p>
+
               <h3 id="git-flow">Git-flow</h3>
               <p>
                 A git-flow egy népszerű munkafolyamat és elnevezési konvenció a Git használatára,
@@ -518,6 +546,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 segíthet a projekt fejlesztési folyamatának és kiadásainak strukturáltabbá
                 tételében.
               </p>
+
               <h3 id="lekeresi-kerelmek">Lekérési kérelmek</h3>
               <p>
                 A lekérési kérelmek(Pull Requests) nem a Git maga jellemzői, hanem inkább a Git
@@ -527,7 +556,8 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 hatékony együttműködést és ellenőrzést tesz lehetővé a projekt fejlesztésének
                 folyamán.
               </p>
-              <h3 id="miert-van-ezekre-szukseg">Miért van ezekre szűkség</h3>
+
+              <h3 id="miert-van-ezekre-szukseg">Miért van ezekre szűkség?</h3>
               <p>
                 Ezek a szabályok segíthetnek a projektmenedzsment és az együttműködés szervezésében,
                 különösen akkor, amikor több fejlesztő dolgozik együtt ugyanazon a projektön. Az
@@ -535,8 +565,10 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 csapat preferenciáitól függően változhatnak.
               </p>
             </div>
+
             <div class="col-12">
-              <h2 id="biztonság">Biztonság</h2>
+              <h2 id="biztonsag">Biztonság</h2>
+
               <h3 id="hozzaferesek-lekezelese">Hozzáférések lekezelése</h3>
               <p>
                 A Git verziókezelő rendszer nem rendelkezik beépített hozzáférés-vezérlési
@@ -554,11 +586,11 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               <p>
                 Ezenkívül fontos megjegyezni, hogy a Git korábbi verzióiban néhány <em
                   >súlyos biztonsági</em
-                >
-                 sérülékenységet is felfedeztek, amelyek lehetővé tették a támadók számára a
+                > sérülékenységet is felfedeztek, amelyek lehetővé tették a támadók számára a
                 rosszindulatú kód futtatását a Git rendszerrel rendelkező számítógépeken. Ezek a
                 sérülékenységek azonban hamarosan javításra kerültek a Git szoftverben.
               </p>
+
               <h3 id="alap-vedelmi-elve">Alap védelmi elve</h3>
               <p>
                 A Git belsőleg SHA-1 hash algoritmust használ az objektumok azonosításához. Bár a
@@ -571,9 +603,11 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 függvényekkel helyettesítik.
               </p>
             </div>
+
             <section class="row pt-5">
               <div class="col-12">
                 <h2 id="english-summary">English summary</h2>
+
                 <p>
                   Git is an open-source distributed version control system initially developed by
                   Linus Torvalds for the Linux kernel project after the BitKeeper version control
@@ -610,6 +644,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
           </div>
         </section>
       </div>
+
       <div class="col-lg-3 d-lg-block d-none">
         <TableOfContent client:only="react" transition:name="table-of-content" />
       </div>
