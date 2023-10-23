@@ -187,6 +187,8 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               tárolja. Az index gyorsítótárazza ezeket az információkat a hatékonyabb
               véglegesítéshez.
             </p>
+
+            <h3 id="objektumadatbazis">Objektumadatbázis</h3>
             <ImageWithCaption
               float="right"
               src="/git-operations.jpg"
@@ -194,8 +196,6 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               caption="Git működés"
               width={350}
             />
-
-            <h3 id="objektumadatbazis">Objektumadatbázis</h3>
             <ul>
               <li>
                 <strong>Blob</strong> (bináris nagy objektum): Ezek a blobok az aktuális fájlok
@@ -209,12 +209,12 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 amely lehetővé teszi a fastruktúrák állapotának pontos meghatározását.
               </li>
               <li>
-                <strong>Véglegesítési objektum</strong>(commit): Ezek az objektumok kapcsolódnak a
+                <strong>Véglegesítési objektum</strong> (commit): Ezek az objektumok kapcsolódnak a
                 fa objektumokhoz és tartalmazzák azok nevét (a legfelső szintű forráskönyvtárban),
                 időbélyeget, naplóüzenetet és a szülő véglegesítési objektumok neveit.
               </li>
               <li>
-                <strong>Címkeobjektum</strong>(tag): A címkeobjektumok hivatkozást tartalmaznak más
+                <strong>Címkeobjektum</strong> (tag): A címkeobjektumok hivatkozást tartalmaznak más
                 objektumokra és további metaadatokat. Gyakran a digitális aláírások tárolására
                 szolgálnak.
               </li>
