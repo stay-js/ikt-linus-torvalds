@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/layout.astro';
 import { TableOfContent } from '~/components/table-of-conent';
+import ImageWithCaption from '~/components/image-with-caption.astro';
 ---
 
 <Layout path="/git" title="Git" description="TODO">
@@ -17,63 +18,53 @@ import { TableOfContent } from '~/components/table-of-conent';
           <div class="col-12">
             <h2 id="a-git-altalanos-tudnivaloi">A Git általános tudnivalói</h2>
             <h3 id="mi-az-a-git?">Mi az a git?</h3>
+            <ImageWithCaption
+              float="left"
+              src="/gitnotext.jpg"
+              alt="Git logo"
+              caption="Git logo"
+              width={120}
+            />
             <p>
-              A Git egy elosztott verziókezelő rendszer, amelyet a számítógépes fájlok változásainak
-              nyomon követésére és a szoftverfejlesztők együttműködésének koordinálására használnak.
-              A Git a Linux kernel fejlesztésére született Linus Torvalds kezdeményezésére, miután a
-              korábbi verziókezelő rendszer, a BitKeeper, elvesztette az ingyenes licencelést. A
-              BitKeeper visszavonása miatt Torvalds olyan verziókezelő rendszert kívánt létrehozni,
-              amely hatékonyan támogatja a Linux kernel fejlesztéséhez szükséges igényeket.
+              A <strong>Git</strong> egy elosztott verziókezelő rendszer, amelyet a számítógépes
+              fájlok változásainak nyomon követésére és a szoftverfejlesztők együttműködésének
+              koordinálására használnak. A Git a Linux kernel fejlesztésére született <em
+                >Linus Torvalds</em
+              > kezdeményezésére, miután a korábbi verziókezelő rendszer, a BitKeeper, elvesztette
+              az ingyenes licencelést. A BitKeeper visszavonása miatt Torvalds olyan verziókezelő
+              rendszert kívánt létrehozni, amely hatékonyan támogatja a Linux kernel fejlesztéséhez
+              szükséges igényeket.
             </p>
             <h3 id="miert-keszult?">Miért készült?</h3>
             <p>
-              Linus Torvalds, a Linux kernel alkotója, hozta létre eredetileg a Gitet 2005-ben a
-              Linux kernel fejlesztése során tapasztalt problémák miatt. Ekkor a BitKeeper nevű
-              verziókezelő rendszer ingyenes licencét visszavonták, és Torvalds úgy döntött, hogy
-              saját verziókezelő rendszert fejleszt, amely megfelel az igényeinek.
+              Linus Torvalds hozta létre eredetileg a Gitet 2005-ben a Linux kernel fejlesztése
+              során tapasztalt problémák miatt. Ekkor a <em>BitKeeper</em> nevű verziókezelő
+              rendszer ingyenes licencét visszavonták, és Torvalds úgy döntött, hogy saját
+              verziókezelő rendszert fejleszt, amely megfelel az igényeinek.
             </p>
             <h3 id="roviden-a-gitrol">Röviden a gitről</h3>
             <p>
               Összességében a Git egy olyan verziókezelő rendszer, amely Linus Torvalds által
               kezdeményezett a személyes szükségleteiből fakadóan, és amely aztán a fejlesztői
-              közösségek körében elterjedt, különösen a GitHub nevű online platform megjelenésével.
-              Ma a Git alapvető eszköz a szoftverfejlesztésben és számos egyéb projekt
-              menedzselésében is.
+              közösségek körében elterjedt, különösen a <em>GitHub</em> nevű online platform
+              megjelenésével. Ma a Git alapvető eszköz a szoftverfejlesztésben és számos egyéb
+              projekt menedzselésében is.
             </p>
-          </div>
-          <div class="col-12">
-            <h2 id="git-parancsok">Git parancsok(TODO)</h2>
-            <p>TODO</p>
-            <table>
-              <caption>A git egynéhány parancsa</caption>
-              <thead>
-                <tr>
-                  <th>Parancsok</th>
-                  <th>Mit csinálnak</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>git innit</th>
-                  <td>repo inicializálása</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
           <div class="col-12">
             <h2 id="a-git-tortenete">A git története</h2>
             <h3 id="kezdetek">Kezdetek</h3>
             <p>
-              Linus Torvalds, a Linux kernel alkotója, elkezdi kifejleszteni a Git verziókezelő
-              rendszert. Torvalds elégedetlen volt a korábbi verziókezelő rendszerekkel, amelyekkel
-              a Linux kernel fejlesztését kezelte, és úgy érezte, hogy szükség van egy hatékonyabb
-              és gyorsabb megoldásra.
+              Linus Torvalds elkezdi kifejleszteni a Git verziókezelő rendszert. Torvalds
+              elégedetlen volt a korábbi verziókezelő rendszerekkel, amelyekkel a Linux kernel
+              fejlesztését kezelte, és úgy érezte, hogy szükség van egy hatékonyabb és gyorsabb
+              megoldásra.
             </p>
             <h3 id="elnevezese">Elnevezése</h3>
             <p>
-              Az elnevezése, "Git", Torvalds részéről ironikus volt, és eredetileg a brit angol
-              szlengben "kellemetlen embert" jelent. A Git elnevezése és névválasztása Torvalds
-              humoros hozzáállását tükrözi a projektjéhez.
+              Az elnevezése, "<em>Git</em>", Torvalds részéről ironikus volt, és eredetileg a brit
+              angol szlengben "kellemetlen embert" jelent. A Git elnevezése és névválasztása
+              Torvalds humoros hozzáállását tükrözi a projektjéhez.
             </p>
             <h3 id="elso-publikus-kiadas">Első publikus kiadás</h3>
             <p>
@@ -85,12 +76,20 @@ import { TableOfContent } from '~/components/table-of-conent';
               A Git gyorsan népszerűvé vált a fejlesztői közösségek körében. A Linux kernel közösség
               mellett más nyílt forráskódú projektjeke is elkezdték használni a Gitet.
             </p>
+            <ImageWithCaption
+              float="right"
+              src="/github.jpg"
+              alt="Github logo"
+              caption="Github logo"
+              width={120}
+            />
             <h3 id="github-alapitasa">GitHub alapítása</h3>
+
             <p>
-              2008-ban Tom Preston-Werner, Chris Wanstrath és PJ Hyett megalapították a GitHubot,
-              egy online platformot, amely lehetővé tette a Git alapú verziókezelési projektek közös
-              tárolását és együttműködését. Ez hozzájárult a Git és a GitHub népszerűségének
-              robbanásszerű növekedéséhez.
+              2008-ban <em>Tom Preston-Werner, Chris Wanstrath és PJ Hyett</em> megalapították a
+              GitHubot, egy online platformot, amely lehetővé tette a Git alapú verziókezelési
+              projektek közös tárolását és együttműködését. Ez hozzájárult a Git és a GitHub
+              népszerűségének robbanásszerű növekedéséhez.
             </p>
             <h3 id="git-elterjedese">Git elterjedése</h3>
             <p>
@@ -108,50 +107,51 @@ import { TableOfContent } from '~/components/table-of-conent';
             </p>
           </div>
           <div class="col-12">
-            <h2 id="hogyan-mukodik-a-git">Tervezése</h2>
+            <h2 id="tervezese">Tervezése</h2>
             <ul>
               <li>
-                Nemlineáris fejlesztés erős támogatása: A Git erősen támogatja a gyors elágazást és
-                egyesítést, valamint speciális eszközöket tartalmaz a nemlineáris fejlesztési
-                előzmények megjelenítéséhez és navigálásához. Az ágak könnyűek, és egy ág csak egy
-                commit-ra utal.
+                <strong>Nemlineáris fejlesztés erős támogatása</strong>: A Git erősen támogatja a
+                gyors elágazást és egyesítést, valamint speciális eszközöket tartalmaz a nemlineáris
+                fejlesztési előzmények megjelenítéséhez és navigálásához. Az ágak könnyűek, és egy
+                ág csak egy commit-ra utal.
               </li>
               <li>
-                Elosztott fejlesztés: A Git minden fejlesztőnek ad egy helyi másolatot a teljes
-                fejlesztési előzményekről, és a változtatások könnyen átmásolódnak a tárolóból a
-                másikba.
+                <strong>Elosztott fejlesztés</strong>: A Git minden fejlesztőnek ad egy helyi
+                másolatot a teljes fejlesztési előzményekről, és a változtatások könnyen
+                átmásolódnak a tárolóból a másikba.
               </li>
               <li>
-                Kompatibilitás a meglévő rendszerekkel és protokollokkal: A Git támogatja különböző
-                hálózati protokollokat, például HTTPS, HTTP, FTP, valamint a Git protokollt.
-                Emellett kompatibilis a CVS-kiszolgálóval is.
+                <strong>Kompatibilitás a meglévő rendszerekkel és protokollokkal</strong>: A Git
+                támogatja különböző hálózati protokollokat, például HTTPS, HTTP, FTP, valamint a Git
+                protokollt. Emellett kompatibilis a CVS-kiszolgálóval is.
               </li>
               <li>
-                Nagy projektek hatékony kezelése: A Git rendkívül gyors és skálázható, különösen
-                nagy adattárak esetén. Gyorsabban kezeli a nagy adattárakat, mint a versenytársai,
-                és lehetővé teszi a verzióelőzmények gyors lekérését.
+                <strong>Nagy projektek hatékony kezelése</strong>: A Git rendkívül gyors és
+                skálázható, különösen nagy adattárak esetén. Gyorsabban kezeli a nagy adattárakat,
+                mint a versenytársai, és lehetővé teszi a verzióelőzmények gyors lekérését.
               </li>
               <li>
-                Történelem kriptográfiai hitelesítése: A Git előzményeket olyan módon tárolja, hogy
-                azok integritását ellenőrizni lehessen, és a régi verziókat nem lehet észrevétlenül
-                megváltoztatni.
+                <strong>Történelem kriptográfiai hitelesítése</strong>: A Git előzményeket olyan
+                módon tárolja, hogy azok integritását ellenőrizni lehessen, és a régi verziókat nem
+                lehet észrevétlenül megváltoztatni.
               </li>
               <li>
-                Eszközkészlet alapú tervezés: A Git C nyelven írt programokból és shell-szkriptekből
-                áll, amelyek burkolókat biztosítanak a programok körül. Ez lehetővé teszi az
-                összetevők könnyű összeláncolását.
+                <strong>Eszközkészlet alapú tervezés</strong>: A Git C nyelven írt programokból és
+                shell-szkriptekből áll, amelyek burkolókat biztosítanak a programok körül. Ez
+                lehetővé teszi az összetevők könnyű összeláncolását.
               </li>
               <li>
-                Csatlakoztatható egyesítési stratégiák: A Git támogatja különböző összevonási
-                stratégiákat, és lehetőséget biztosít a felhasználóknak a stratégia választására.
+                <strong>Csatlakoztatható egyesítési stratégiák</strong>: A Git támogatja különböző
+                összevonási stratégiákat, és lehetőséget biztosít a felhasználóknak a stratégia
+                választására.
               </li>
               <li>
-                A szemét összegyűjtésig gyűlik: A Git automatikusan végzi a szemétgyűjtést a lógó
-                objektumok eltávolítására.
+                <strong>A szemét összegyűjtésig gyűlik</strong>: A Git automatikusan végzi a
+                szemétgyűjtést a lógó objektumok eltávolítására.
               </li>
               <li>
-                Időszakos explicit objektumcsomagolás: A Git csomagokat használ a nagyszámú
-                objektumok hatékony tárolásához és átviteléhez.
+                <strong>Időszakos explicit objektumcsomagolás</strong>: A Git csomagokat használ a
+                nagyszámú objektumok hatékony tárolásához és átviteléhez.
               </li>
               <li>
                 A Git eredetileg az MIT licenc alatt készült. Ezek a tervezési döntések lehetővé
@@ -169,39 +169,47 @@ import { TableOfContent } from '~/components/table-of-conent';
               tárolja. Az index gyorsítótárazza ezeket az információkat a hatékonyabb
               véglegesítéshez.
             </p>
+            <ImageWithCaption
+              float="right"
+              src="/git-operations.jpg"
+              alt="Git működés"
+              caption="Git működés"
+              width={360}
+            />
             <h3 id="objektumadatbazis">Objektumadatbázis</h3>
             <ul>
               <li>
-                Blob (bináris nagy objektum): Ezek a blobok az aktuális fájlok tartalmát tárolják.
-                Nincsenek neveik, időbélyegeik vagy metaadatuk. Az objektumokat a tartalmuk SHA-1
-                hash-je alapján azonosítja a Git.
+                <strong>Blob</strong> (bináris nagy objektum): Ezek a blobok az aktuális fájlok
+                tartalmát tárolják. Nincsenek neveik, időbélyegeik vagy metaadatuk. Az objektumokat
+                a tartalmuk SHA-1 hash-je alapján azonosítja a Git.
               </li>
               <li>
-                Fa objektum: A fa objektumok a könyvtárak megfelelői, tartalmazzák a fájlnevek
-                listáját és egy hivatkozást egy blob- vagy faobjektumra. Ezek a fa objektumok a
-                forrásfa pillanatképei, és lényegében egy Merkle-fát tartalmaznak, amely lehetővé
-                teszi a fastruktúrák állapotának pontos meghatározását.
+                <strong>Fa objektum</strong>: A fa objektumok a könyvtárak megfelelői, tartalmazzák
+                a fájlnevek listáját és egy hivatkozást egy blob- vagy faobjektumra. Ezek a fa
+                objektumok a forrásfa pillanatképei, és lényegében egy Merkle-fát tartalmaznak,
+                amely lehetővé teszi a fastruktúrák állapotának pontos meghatározását.
               </li>
               <li>
-                Véglegesítési objektum(commit): Ezek az objektumok kapcsolódnak a fa objektumokhoz
-                és tartalmazzák azok nevét (a legfelső szintű forráskönyvtárban), időbélyeget,
-                naplóüzenetet és a szülő véglegesítési objektumok neveit.
+                <strong>Véglegesítési objektum</strong>(commit): Ezek az objektumok kapcsolódnak a
+                fa objektumokhoz és tartalmazzák azok nevét (a legfelső szintű forráskönyvtárban),
+                időbélyeget, naplóüzenetet és a szülő véglegesítési objektumok neveit.
               </li>
               <li>
-                Címkeobjektum(tag): A címkeobjektumok hivatkozást tartalmaznak más objektumokra és
-                további metaadatokat. Gyakran a digitális aláírások tárolására szolgálnak.
+                <strong>Címkeobjektum</strong>(tag): A címkeobjektumok hivatkozást tartalmaznak más
+                objektumokra és további metaadatokat. Gyakran a digitális aláírások tárolására
+                szolgálnak.
               </li>
               <li>
-                Packfile: A packfile objektumok különböző egyéb objektumokat gyűjtenek össze, és
-                zlib-tömörített kötegként tárolják őket a hatékony tárolás és hálózati szállítás
-                érdekében.
+                <strong>Packfile</strong>: A packfile objektumok különböző egyéb objektumokat
+                gyűjtenek össze, és zlib-tömörített kötegként tárolják őket a hatékony tárolás és
+                hálózati szállítás érdekében.
               </li>
             </ul>
             <p>
-              Minden objektumot a tartalmának SHA-1 hash-je azonosít, és a Git a hash értékét
-              használja az objektum nevének. Az objektumok fizikailag olyan könyvtárstruktúrában
-              tárolódnak, amely megegyezik a hash érték első két karakterével. Az hash többi része
-              az objektum fájlneveként szolgál.
+              Minden objektumot a tartalmának <em>SHA-1 hash</em>-je azonosít, és a Git a hash
+              értékét használja az objektum nevének. Az objektumok fizikailag olyan
+              könyvtárstruktúrában tárolódnak, amely megegyezik a hash érték első két karakterével.
+              Az hash többi része az objektum fájlneveként szolgál.
             </p>
             <h3 id="falj-tarolasa">Fálj tarolása</h3>
             <p>
@@ -217,192 +225,203 @@ import { TableOfContent } from '~/components/table-of-conent';
             </p>
           </div>
           <div class="col-12">
-            <h2 id="a-git-kulonfele-megvalositasai">A git különféle megvalósításai</h2>
-            <h3 id="git-(c-nyelvu-fo-implementacio)">Git (C nyelvű fő implementáció)</h3>
-            <p>
-              Git elsődleges implementációja C nyelven készült, és működik Linuxon, valamint a
-              legtöbb fő operációs rendszeren, beleértve a BSD-t, Solarist, macOS-t és Windowst. A
-              Windows támogatást különösen érdekessé teszi az, hogy először Linux-emulációs
-              környezetet használt a Windows alatti verziókhoz. Később natív Windows buildjeit is
-              kifejlesztették, és az MSYS2-t használják a Git for Windows terjesztéshez.
-            </p>
-            <h3 id="gitg">Gitg</h3>
-            <p>
-              A gitg egy grafikus felhasználói felület a Git-hez, és a GTK+ keretrendszert
-              használja. Ezáltal lehetővé teszi a felhasználók számára, hogy a Git műveleteket egy
-              grafikus felületen keresztül végezzék el.
-            </p>
-            <h3 id="jgit">JGit:</h3>
-            <p>
-              A JGit egy tiszta Java szoftverkönyvtár, amelyet a Git-protokoll támogatására
-              terveztek. Használható bármely Java alkalmazásban, és a Gerrit kód-ellenőrző
-              eszközben, valamint az EGit Eclipse IDE Git kliensben is használják.
-            </p>
-            <h3 id="go-git">Go-git</h3>
-            <p>
-              A Go-git a Git nyílt forráskódú megvalósítása, amely tiszta Go nyelven íródott.
-              Jelenleg olyan projektek támogatására használják, amelyek Git kódtárakat kezelnek, és
-              titkosítást is biztosít a Git számára.
-            </p>
-            <h3 id="git-dulwich:">Git Dulwich</h3>
-            <p>
-              A Git Dulwich egy tiszta Python szoftverkomponens a Python 2.7, 3.4 és 3.5 verzióihoz.
-              Segítségével a Git műveleteket Python alkalmazásokban is használhatják.
-            </p>
-            <h3 id="libgit2">libgit2</h3>
-            <p>
-              A libgit2 egy ANSI C szoftverkönyvtár, amely a Git számára készült. Nem tartalmaz más
-              függőséget, és több platformon is futtatható, beleértve a Windowst, Linuxot, macOS-t
-              és BSD-t. Kötéseket biztosít több programozási nyelvhez, például Ruby, Python és
-              Haskell.
-            </p>
-            <h3 id="js-git">JS-Git</h3>
-            <p>
-              A JS-Git egy JavaScript implementációja a Git egy részhalmazának. Ez lehetővé teszi a
-              Git műveletek végrehajtását JavaScript nyelven.
-            </p>
-          </div>
-          <div class="col-12">
-            <h2 id="a-git-szervere">A git szerverek</h2>
-            <h3 id="altalanosan">Általánosan</h3>
-            <p>
-              A Git szerverek olyan gépek vagy kiszolgálók, amelyeken Git-tárolókat üzemeltetnek, és
-              lehetővé teszik a Git kliensek számára, hogy ezekkel a tárolókkal kommunikáljanak. A
-              Git-ben beépített egyszerű Git-szerver is található, amely a git daemon paranccsal
-              aktiválható. Emellett léteznek dedikált Git HTTP-szerverek is, amelyek további
-              funkciókat kínálnak, például webes felületeken keresztüli tárolótartalom
-              megjelenítést.
-            </p>
-            <h3 id="Gerrit">Gerrit</h3>
-            <p>
-              A Gerrit egy népszerű Git szerver, amely lehetővé teszi a kódellenőrzést és a
-              hozzáférést SSH-n keresztül. A Gerrit kompatibilis LDAP, Active Directory, OpenID,
-              OAuth, Kerberos/GSSAPI, X509 https kliens tanúsítványokkal. A Gerrit 3.0-val minden
-              konfiguráció Git-lerakatként tárolva van, és nincs szükség adatbázisra a futtatáshoz.
-            </p>
-            <h3 id="phabricator">Phabricator</h3>
-            <p>
-              A Phabricator egy Facebook mellékterméke, amely támogatja a Git-et is. Bár a Facebook
-              elsősorban a Mercurialt használja, a Phabricator-ban is van Git támogatás.
-            </p>
-            <h3 id="rhodecode-community-edition">RhodeCode Community Edition</h3>
-            <p>
-              A RhodeCode (CE) egy olyan szerveralkalmazás, amely támogatja a Git, a Mercurial és a
-              Subversion verziókezelő rendszereket. Az AGPLv3 licenc alatt áll.
-            </p>
-            <h3 id="kallithea">Kallithea</h3>
-            <p>
-              A Kallithea egy Pythonban írt, GPL licenccel rendelkező szerveralkalmazás, amely
-              támogatja a Git-et és a Mercurialt.
-            </p>
-            <h3 id="gitolite">Gitolite</h3>
-            <p>
-              A Gitolite egy külső projekt, amely a Git szoftveren felül szkripteket biztosít a
-              hozzáférés szigorú szabályozásához.
-            </p>
-            <h3 id="git-szerver-mint-szolgaltatas">Git szerver mint szolgáltatás</h3>
-            <p>
-              Számos olyan szolgáltatás létezik, amelyek Git-tárolókat kínálnak felhasználóknak.
-              Ezek közé tartozik a GitHub, a SourceForge, a Bitbucket és a GitLab, amelyek lehetővé
-              teszik a felhasználók számára, hogy tárolókat hozzanak létre és központosítsák
-              projektjeik fejlesztését az interneten. Mindegyiknek saját sajátosságai és előnyei
-              vannak.
-            </p>
-            <h3 id="egyeb">Egyéb</h3>
-            <p>
-              Ezenkívül vannak más önkiszolgáló Git-szervermegoldások is, például a Gogs és a Gitea,
-              amelyek Go nyelven készültek és MIT licenccel rendelkeznek. Ezek a Git szerverek és
-              szolgáltatások segítik a fejlesztőket a Git alapú projektkezelésben és
-              verziókezelésben, valamint lehetővé teszik a kód megosztását és együttműködését a
-              csapatok között.
-            </p>
-          </div>
-          <div class="col-12">
-            <h2 id="a-git-sazbalyai">A Git szabályai</h2>
-            <h3 id="fo-ag ">Fő ág</h3>
-            <p>
-              Az alapértelmezett ág, amelyet sok projekt a git init paranccsal hoz létre. Gyakran az
-              upstream távoli neve "origin", és az alapértelmezett távoli ág neve "origin/master".
-              Bár a "master" használata az alapértelmezett ágnévként gyakori, sok helyen a "main"
-              vagy más ágneveket is alkalmaznak, különösen a társadalmi és politikai okokból.
-            </p>
-            <h3 id="commitok">Commitok</h3>
-            <p>
-              Az alapelv az, hogy a kitolt commitokat nem szabad felülírni. Ehelyett vissza kell
-              állítani a hibás változtatásokat. A véglegesítés felülírása helyett a visszaállítás
-              szigorúbb ellenőrzést tesz lehetővé és segít megőrizni a megosztott előzmények
-              integritását.
-            </p>
-            <h3 id="git-flow">Git-flow</h3>
-            <p>
-              A git-flow egy népszerű munkafolyamat és elnevezési konvenció a Git használatára,
-              amely különböző ágakat és elnevezéseket használ az instabil előzmények, instabil
-              megosztott előzmények, gyártásra kész előzmények és kiadott termékek kezelésére. Ez
-              segíthet a projekt fejlesztési folyamatának és kiadásainak strukturáltabbá tételében.
-            </p>
-            <h3 id="lekeresi-kerelmek">Lekérési kérelmek</h3>
-            <p>
-              A lekérési kérelmek(Pull Requests) nem a Git maga jellemzői, hanem inkább a Git
-              felhőszolgáltatások (például GitHub, GitLab, Bitbucket) által biztosított funkciók. A
-              lekérési kérelmek lehetővé teszik a fejlesztők számára, hogy kérjenek és végezzenek
-              elágazásokat, majd kérjék, hogy azokat egyesítse egy másik ágban. Ez hatékony
-              együttműködést és ellenőrzést tesz lehetővé a projekt fejlesztésének folyamán.
-            </p>
-            <h3 id="miert-van-ezekre-szukseg">Miért van ezekre szűkség</h3>
-            <p>
-              Ezek a szabályok segíthetnek a projektmenedzsment és az együttműködés szervezésében,
-              különösen akkor, amikor több fejlesztő dolgozik együtt ugyanazon a projektön. Az
-              együttműködési és verziókezelési gyakorlatok projekt-specifikusak lehetnek, és a
-              csapat preferenciáitól függően változhatnak.
-            </p>
-          </div>
-          <div class="col-12">
-            <h2 id="biztonság">Biztonság</h2>
-            <h3 id="hozzaferesek-lekezelese">Hozzáférések lekezelése</h3>
-            <p>
-              A Git verziókezelő rendszer nem rendelkezik beépített hozzáférés-vezérlési
-              mechanizmusokkal, azaz nem tartalmaz olyan eszközöket, amelyek kifejezetten a
-              hozzáférések és jogosultságok kezelésére szolgálnak. Ehelyett a Git arra összpontosít,
-              hogy hatékonyan kezelje a verziókezelést és az előzmények nyomon követését. A Git
-              szerverek általában más eszközökkel támogatják a hozzáférés-vezérlést, például SSH,
-              HTTPS vagy HTTP protokollok, valamint felhasználói hitelesítési mechanizmusok (például
-              jelszavas vagy kulcsalapú hitelesítés). A hozzáférés-vezérlést általában a
-              tárolószerver konfigurációja határozza meg. Olyan szolgáltatások, mint a GitHub, a
-              GitLab vagy a Bitbucket, kiegészítő hozzáférés-vezérlési mechanizmusokat is
-              biztosítanak, például felhasználói szerepköröket, csoportokat és hozzáférési
-              jogosultságokat.
-            </p>
-            <p>
-              Ezenkívül fontos megjegyezni, hogy a Git korábbi verzióiban néhány súlyos biztonsági
-              sérülékenységet is felfedeztek, amelyek lehetővé tették a támadók számára a
-              rosszindulatú kód futtatását a Git rendszerrel rendelkező számítógépeken. Ezek a
-              sérülékenységek azonban hamarosan javításra kerültek a Git szoftverben.
-            </p>
-            <h3 id="alap-vedelmi-elve">Alap védelmi elve</h3>
-            <p>
-              A Git belsőleg SHA-1 hash algoritmust használ az objektumok azonosításához. Bár a
-              SHA-1 algoritmus hosszú ideje biztonságosnak számított, a számítógépes biztonsággal
-              kapcsolatos fejlődések miatt elterjedt a SHA-1 hash-kódok biztonsági
-              sérülékenységeinek megkérdőjelezése. Az SHA-1 hash-kódokra kifejtett "SHAttered"
-              támadás példa volt erre. Ezért a Git az SHA-1 használatának módosítását fontolgatja,
-              és a tervezett átállási terv részeként kriptográfiailag erősebb hash algoritmusokra
-              való áttérést tervezi. Az SHA-1 változatot az újabb verziókban erősebb hash
-              függvényekkel helyettesítik.
-            </p>
-          </div>
-          <div class="col-12">
-            <h2 id=""></h2>
-            <h3 id=""></h3>
-            <p></p>
-            <h3 id=""></h3>
-            <p></p>
-          </div>
-          <section class="row pt-5">
+            <h2 id="git-parancsok">Git parancsok</h2>
+            <table>
+              <tr>
+                <td>TODO</td>
+              </tr>
+            </table>
             <div class="col-12">
-              <h2 id="english-summary">English summary</h2>
-              <p>Todo</p>
+              <h2 id="a-git-kulonfele-megvalositasai">A git különféle megvalósításai</h2>
+              <ul>
+                <li>
+                  <strong>Git (C nyelvű fő implementáció)</strong>: Git elsődleges implementációja C
+                  nyelven készült, és működik Linuxon, valamint a legtöbb fő operációs rendszeren,
+                  beleértve a BSD-t, Solarist, macOS-t és Windowst. A Windows támogatást különösen
+                  érdekessé teszi az, hogy először Linux-emulációs környezetet használt a Windows
+                  alatti verziókhoz. Később natív Windows buildjeit is kifejlesztették, és az
+                  MSYS2-t használják a Git for Windows terjesztéshez.
+                </li>
+                <li>
+                  <strong>Gitg</strong>: A gitg egy grafikus felhasználói felület a Git-hez, és a
+                  GTK+ keretrendszert használja. Ezáltal lehetővé teszi a felhasználók számára, hogy
+                  a Git műveleteket egy grafikus felületen keresztül végezzék el.
+                </li>
+                <li>
+                  <strong>JGit</strong>: A JGit egy tiszta Java szoftverkönyvtár, amelyet a
+                  Git-protokoll támogatására terveztek. Használható bármely Java alkalmazásban, és a
+                  Gerrit kód-ellenőrző eszközben, valamint az EGit Eclipse IDE Git kliensben is
+                  használják.
+                </li>
+                <li>
+                  <strong>Go-git</strong>: A Go-git a Git nyílt forráskódú megvalósítása, amely
+                  tiszta Go nyelven íródott. Jelenleg olyan projektek támogatására használják,
+                  amelyek Git kódtárakat kezelnek, és titkosítást is biztosít a Git számára.
+                </li>
+                <li>
+                  <strong>Git Dulwich</strong>: A Git Dulwich egy tiszta Python szoftverkomponens a
+                  Python 2.7, 3.4 és 3.5 verzióihoz. Segítségével a Git műveleteket Python
+                  alkalmazásokban is használhatják.
+                </li>
+                <li>
+                  <strong>libgit2</strong>: A libgit2 egy ANSI C szoftverkönyvtár, amely a Git
+                  számára készült. Nem tartalmaz más függőséget, és több platformon is futtatható,
+                  beleértve a Windowst, Linuxot, macOS-t és BSD-t. Kötéseket biztosít több
+                  programozási nyelvhez, például Ruby, Python és Haskell.
+                </li>
+                <li>
+                  <strong>JS-Git</strong>: A JS-Git egy JavaScript implementációja a Git egy
+                  részhalmazának. Ez lehetővé teszi a Git műveletek végrehajtását JavaScript
+                  nyelven.
+                </li>
+              </ul>
             </div>
-          </section>
+            <div class="col-12">
+              <h2 id="a-git-szervere">A git szerverek</h2>
+              <h3 id="altalanosan">Általánosan</h3>
+              <p>
+                A Git szerverek olyan gépek vagy kiszolgálók, amelyeken Git-tárolókat üzemeltetnek,
+                és lehetővé teszik a Git kliensek számára, hogy ezekkel a tárolókkal
+                kommunikáljanak. A Git-ben beépített egyszerű Git-szerver is található, amely a git
+                daemon paranccsal aktiválható. Emellett léteznek dedikált Git HTTP-szerverek is,
+                amelyek további funkciókat kínálnak, például webes felületeken keresztüli
+                tárolótartalom megjelenítést.
+              </p>
+              <ImageWithCaption
+              float="right"
+              src="/gerrit.png"
+              alt="gerrit logo"
+              caption="Gerrit logo"
+              width={200}
+            />
+              <h3 id="kulonfele-verziok">Különféle verziók</h3>
+              <ul>
+                <li>
+                  <strong>Gerrit</strong>: A Gerrit egy népszerű Git szerver, amely lehetővé teszi a
+                  kódellenőrzést és a hozzáférést SSH-n keresztül. A Gerrit kompatibilis LDAP,
+                  Active Directory, OpenID, OAuth, Kerberos/GSSAPI, X509 https kliens
+                  tanúsítványokkal. A Gerrit 3.0-val minden konfiguráció Git-lerakatként tárolva
+                  van, és nincs szükség adatbázisra a futtatáshoz.
+                </li>
+                <li>
+                  <strong>Phabricator</strong>: A Phabricator egy Facebook mellékterméke, amely
+                  támogatja a Git-et is. Bár a Facebook elsősorban a Mercurialt használja, a
+                  Phabricator-ban is van Git támogatás.
+                </li>
+                <li>
+                  <strong>RhodeCode Community Edition</strong>(CE): A RhodeCode (CE) egy olyan
+                  szerveralkalmazás, amely támogatja a Git, a Mercurial és a Subversion verziókezelő
+                  rendszereket. Az AGPLv3 licenc alatt áll.
+                </li>
+                <li>
+                  <strong>Kallithea</strong>: A Kallithea egy Pythonban írt, GPL licenccel
+                  rendelkező szerveralkalmazás, amely támogatja a Git-et és a Mercurialt.
+                </li>
+                <li>
+                  <strong>Gitolite</strong>: A Gitolite egy külső projekt, amely a Git szoftveren
+                  felül szkripteket biztosít a hozzáférés szigorú szabályozásához.
+                </li>
+                <li>
+                  <strong>Git szerver mint szolgáltatás</strong>: Számos olyan szolgáltatás létezik,
+                  amelyek Git-tárolókat kínálnak felhasználóknak. Ezek közé tartozik a GitHub, a
+                  SourceForge, a Bitbucket és a GitLab, amelyek lehetővé teszik a felhasználók
+                  számára, hogy tárolókat hozzanak létre és központosítsák projektjeik fejlesztését
+                  az interneten. Mindegyiknek saját sajátosságai és előnyei vannak.
+                </li>
+                <li>
+                  <strong>Egyéb</strong>: Ezenkívül vannak más önkiszolgáló Git-szervermegoldások
+                  is, például a Gogs és a Gitea, amelyek Go nyelven készültek és MIT licenccel
+                  rendelkeznek. Ezek a Git szerverek és szolgáltatások segítik a fejlesztőket a Git
+                  alapú projektkezelésben és verziókezelésben, valamint lehetővé teszik a kód
+                  megosztását és együttműködését a csapatok között.
+                </li>
+              </ul>
+            </div>
+            <div class="col-12">
+              <h2 id="a-git-sazbalyai">A Git szabályai</h2>
+              <h3 id="fo-ag ">Fő ág</h3>
+              <p>
+                Az alapértelmezett ág, amelyet sok projekt a git init paranccsal hoz létre. Gyakran
+                az upstream távoli neve "origin", és az alapértelmezett távoli ág neve
+                "origin/master". Bár a "master" használata az alapértelmezett ágnévként gyakori, sok
+                helyen a "main" vagy más ágneveket is alkalmaznak, különösen a társadalmi és
+                politikai okokból.
+              </p>
+              <h3 id="commitok">Commitok</h3>
+              <p>
+                Az alapelv az, hogy a kitolt commitokat nem szabad felülírni. Ehelyett vissza kell
+                állítani a hibás változtatásokat. A véglegesítés felülírása helyett a visszaállítás
+                szigorúbb ellenőrzést tesz lehetővé és segít megőrizni a megosztott előzmények
+                integritását.
+              </p>
+              <h3 id="git-flow">Git-flow</h3>
+              <p>
+                A git-flow egy népszerű munkafolyamat és elnevezési konvenció a Git használatára,
+                amely különböző ágakat és elnevezéseket használ az instabil előzmények, instabil
+                megosztott előzmények, gyártásra kész előzmények és kiadott termékek kezelésére. Ez
+                segíthet a projekt fejlesztési folyamatának és kiadásainak strukturáltabbá
+                tételében.
+              </p>
+              <h3 id="lekeresi-kerelmek">Lekérési kérelmek</h3>
+              <p>
+                A lekérési kérelmek(Pull Requests) nem a Git maga jellemzői, hanem inkább a Git
+                felhőszolgáltatások (például GitHub, GitLab, Bitbucket) által biztosított funkciók.
+                A lekérési kérelmek lehetővé teszik a fejlesztők számára, hogy kérjenek és
+                végezzenek elágazásokat, majd kérjék, hogy azokat egyesítse egy másik ágban. Ez
+                hatékony együttműködést és ellenőrzést tesz lehetővé a projekt fejlesztésének
+                folyamán.
+              </p>
+              <h3 id="miert-van-ezekre-szukseg">Miért van ezekre szűkség</h3>
+              <p>
+                Ezek a szabályok segíthetnek a projektmenedzsment és az együttműködés szervezésében,
+                különösen akkor, amikor több fejlesztő dolgozik együtt ugyanazon a projektön. Az
+                együttműködési és verziókezelési gyakorlatok projekt-specifikusak lehetnek, és a
+                csapat preferenciáitól függően változhatnak.
+              </p>
+            </div>
+            <div class="col-12">
+              <h2 id="biztonság">Biztonság</h2>
+              <h3 id="hozzaferesek-lekezelese">Hozzáférések lekezelése</h3>
+              <p>
+                A Git verziókezelő rendszer nem rendelkezik beépített hozzáférés-vezérlési
+                mechanizmusokkal, azaz nem tartalmaz olyan eszközöket, amelyek kifejezetten a
+                hozzáférések és jogosultságok kezelésére szolgálnak. Ehelyett a Git arra
+                összpontosít, hogy hatékonyan kezelje a verziókezelést és az előzmények nyomon
+                követését. A Git szerverek általában más eszközökkel támogatják a
+                hozzáférés-vezérlést, például SSH, HTTPS vagy HTTP protokollok, valamint
+                felhasználói hitelesítési mechanizmusok (például jelszavas vagy kulcsalapú
+                hitelesítés). A hozzáférés-vezérlést általában a tárolószerver konfigurációja
+                határozza meg. Olyan szolgáltatások, mint a GitHub, a GitLab vagy a Bitbucket,
+                kiegészítő hozzáférés-vezérlési mechanizmusokat is biztosítanak, például
+                felhasználói szerepköröket, csoportokat és hozzáférési jogosultságokat.
+              </p>
+              <p>
+                Ezenkívül fontos megjegyezni, hogy a Git korábbi verzióiban néhány <em
+                  >súlyos biztonsági</em
+                >
+                 sérülékenységet is felfedeztek, amelyek lehetővé tették a támadók számára a
+                rosszindulatú kód futtatását a Git rendszerrel rendelkező számítógépeken. Ezek a
+                sérülékenységek azonban hamarosan javításra kerültek a Git szoftverben.
+              </p>
+              <h3 id="alap-vedelmi-elve">Alap védelmi elve</h3>
+              <p>
+                A Git belsőleg SHA-1 hash algoritmust használ az objektumok azonosításához. Bár a
+                SHA-1 algoritmus hosszú ideje biztonságosnak számított, a számítógépes biztonsággal
+                kapcsolatos fejlődések miatt elterjedt a SHA-1 hash-kódok biztonsági
+                sérülékenységeinek megkérdőjelezése. Az SHA-1 hash-kódokra kifejtett "SHAttered"
+                támadás példa volt erre. Ezért a Git az SHA-1 használatának módosítását fontolgatja,
+                és a tervezett átállási terv részeként kriptográfiailag erősebb hash algoritmusokra
+                való áttérést tervezi. Az SHA-1 változatot az újabb verziókban erősebb hash
+                függvényekkel helyettesítik.
+              </p>
+            </div>
+            <section class="row pt-5">
+              <div class="col-12">
+                <h2 id="english-summary">English summary</h2>
+                <p>TODO</p>
+              </div>
+            </section>
+          </div>
         </section>
       </div>
       <div class="col-lg-3 d-lg-block d-none">
