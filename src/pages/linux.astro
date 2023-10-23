@@ -1,6 +1,7 @@
 ---
 import Layout from '~/layouts/layout.astro';
 import { TableOfContent } from '~/components/table-of-conent';
+import ImageWithCaption from '~/components/image-with-caption.astro';
 ---
 
 <Layout
@@ -19,6 +20,13 @@ import { TableOfContent } from '~/components/table-of-conent';
       <div class="col-lg-9">
         <section class="row">
           <div class="col-12">
+            <ImageWithCaption
+              float="left"
+              src="/ubuntu.jpg"
+              alt="Ubunut terminal"
+              caption="Ubuntu"
+              width={350}
+            />
             <p>
               A Linux operációs rendszer egy szabad és nyílt forráskódú szoftver, amelynek központi
               része a Linux-rendszermag. A Linux elnevezés gyakran az egész Unix-szerű operációs
@@ -39,6 +47,13 @@ import { TableOfContent } from '~/components/table-of-conent';
             <h2 id="tortenete">Története</h2>
 
             <h3 id="a-gnu-projekt">A GNU projekt</h3>
+            <ImageWithCaption
+              float="right"
+              src="/gnu.svg"
+              alt="Heckert GNU"
+              caption="GNU Logo"
+              width={150}
+            />
             <p>
               Világszerte sok programozót inspirált az 1983-ban indított GNU Projekt, amelyet
               Richard M. Stallman (RMS) indított útjára. A szabad szoftveres megmozdulás célja az
@@ -208,6 +223,13 @@ import { TableOfContent } from '~/components/table-of-conent';
             </ul>
 
             <h3 id="programozas-linux-alatt">Programozás Linux alatt</h3>
+            <ImageWithCaption
+              float="left"
+              src="/arch.jpg"
+              alt="Arch Linux tmux + vim"
+              caption="Programozás Arch Linux-ban"
+              width={350}
+            />
             <p>
               A legtöbb Linux disztribúció támogat számos programozási nyelvet és eszközöket a
               fejlesztők számára. Ezek közé tartozik a GNU toolchain, amely tartalmazza a GCC (GNU
@@ -251,6 +273,13 @@ import { TableOfContent } from '~/components/table-of-conent';
             </p>
 
             <h3 id="asztali-felhasznalas">Asztali felhasználás</h3>
+            <ImageWithCaption
+              float="left"
+              src="/ubuntu-desktop.jpg"
+              alt="Ubuntu 20.04"
+              caption="Ubuntu 20.04 Desktop"
+              width={350}
+            />
             <p>
               A Linux asztali operációs rendszerek népszerűsége folyamatosan növekszik, bár áttörés
               még nem történt. Két vezető grafikus felület, a GNOME és a KDE, fejlettek és széles
@@ -271,6 +300,13 @@ import { TableOfContent } from '~/components/table-of-conent';
             </p>
 
             <h3 id="szerverek-es-szuperszamitogepek">Szerverek és szuperszámítógépek</h3>
+            <ImageWithCaption
+              float="right"
+              src="/server.jpg"
+              alt="Szerverek"
+              caption="Szerverek"
+              width={350}
+            />
             <p>
               A Linux-disztribúciók eredetileg szerver operációs rendszerek voltak, és a szerverek
               területén sikeresek voltak a stabilitásuk és hosszú menetidejük miatt. Az LAMP
