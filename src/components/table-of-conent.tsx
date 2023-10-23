@@ -2,9 +2,6 @@ import { useState, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 
 export const TableOfContent: React.FC = () => {
-  const [activeHeading, setActiveHeading] = useState<string | null>();
-  const observer = useRef<IntersectionObserver>();
-
   const headings = Array.from(document.querySelectorAll('h2, h3, h4, h5, h6'))
     .filter((element) => element.id)
     .map((element) => ({
@@ -12,6 +9,9 @@ export const TableOfContent: React.FC = () => {
       text: element.textContent,
       level: Number(element.tagName.slice(1)),
     }));
+
+  const [activeHeading, setActiveHeading] = useState<string | undefined>(headings[0]?.id);
+  const observer = useRef<IntersectionObserver>();
 
   useEffect(() => {
     const elements = headings.map(({ id }) => document.getElementById(id));
