@@ -7,7 +7,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
 <Layout
   path="/linux"
   title="Linux"
-  description=" A Linux operációs rendszer egy szabad és nyílt forráskódú szoftver, amelynek központi része a Linux-rendszermag. A Linux elnevezés gyakran az egész Unix-szerű operációs rendszert, amely a Linux-rendszermagra és a GNU projekt keretében fejlesztett alapprogramokra épül, jelöli. Az operációs rendszer pontosabb neve ebben az értelemben GNU/Linux."
+  description="A Linux operációs rendszer egy szabad és nyílt forráskódú szoftver, amelynek központi része a Linux-rendszermag. A Linux elnevezés gyakran az egész Unix-szerű operációs rendszert, amely a Linux-rendszermagra és a GNU projekt keretében fejlesztett alapprogramokra épül, jelöli. Az operációs rendszer pontosabb neve ebben az értelemben GNU/Linux."
 >
   <main class="container">
     <div class="row" transition:name="title">
@@ -43,6 +43,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               között is, és egyre több személyi számítógépen telepítik Linux disztribúciókat.
             </p>
           </div>
+
           <div class="col-12">
             <h2 id="tortenete">Története</h2>
 
@@ -111,8 +112,8 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               1991. augusztus 25-én Linus egy mostanra már legendássá vált levelet küldött a MINIX
               hírcsoportba. A levél magyar nyelvű fordítása:
             </p>
-            <figure>
-              <blockquote class="blockquote px-3" style="font-size: 0.925rem">
+            <div class="px-5">
+              <code class="text-black">
                 <p>
                   „Üdv minden Minix-felhasználónak odaát! Egy (ingyenes) operációs rendszert
                   csinálok (csak hobbiból, nem lesz olyan nagy és profi, mint a gnu) a 386-os
@@ -127,16 +128,14 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                   kíváncsi lennék, milyen funkciókat szeretnének legtöbben. Minden javaslatot
                   szívesen veszek, azt viszont nem ígérem, hogy meg is valósítom őket :-)
                 </p>
-                <p>
-                  <cite>- Linus (torvalds@kruuna.helsinki.fi)</cite>
-                </p>
+                <p class="fst-italic">- Linus (torvalds@kruuna.helsinki.fi)</p>
                 <p>
                   Ui.: Igen! Nincs benne Minix-kód és többszálú fs-sel rendelkezik. Nem hordozható
                   (a 386 feladatváltást használja stb.), és lehet, hogy soha nem is fog az
                   AT-merevlemezeken kívül bármi mást támogatni, minthogy nekem csak ez van :-(.”
                 </p>
-              </blockquote>
-            </figure>
+              </code>
+            </div>
             <p>
               Így kezdődött a Linux története. Linus levele számos programozót inspirált. Andrew S.
               Tanenbaum - a MINIX operációs rendszer atyja - Hollandiában élő egyetemi tanár,
