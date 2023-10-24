@@ -100,29 +100,27 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
               1991. augusztus 25-én Linus egy mostanra már legendássá vált levelet küldött a MINIX
               hírcsoportba. A levél magyar nyelvű fordítása:
             </p>
-            <div class="px-5">
-              <code class="text-black">
-                <p>
-                  „Üdv minden Minix-felhasználónak odaát! Egy (ingyenes) operációs rendszert
-                  csinálok (csak hobbiból, nem lesz olyan nagy és profi, mint a gnu) a 386-os
-                  (486-os) AT-klónokhoz. Április óta érlelem, és lassan elkészül. Szeretnék
-                  visszajelzéseket arról, hogy mi tetszik és mi nem tetszik a Minixben az
-                  embereknek, mivel az én operációs rendszerem némileg hasonlít rá (többek között
-                  (gyakorlati okokból) azonos a fájlrendszer fizikai kiosztása).
-                </p>
-                <p>
-                  A bash (1.08) és a gcc (1.40) programokat már átültettem, és úgy tűnik, működik a
-                  dolog. Ez azt jelenti, hogy pár hónapon belül valami hasznosat fogok kapni, és
-                  kíváncsi lennék, milyen funkciókat szeretnének legtöbben. Minden javaslatot
-                  szívesen veszek, azt viszont nem ígérem, hogy meg is valósítom őket :-)
-                </p>
-                <p class="fst-italic">- Linus (torvalds@kruuna.helsinki.fi)</p>
-                <p>
-                  Ui.: Igen! Nincs benne Minix-kód és többszálú fs-sel rendelkezik. Nem hordozható
-                  (a 386 feladatváltást használja stb.), és lehet, hogy soha nem is fog az
-                  AT-merevlemezeken kívül bármi mást támogatni, minthogy nekem csak ez van :-(.”
-                </p>
-              </code>
+            <div class="letter">
+              <p>
+                „Üdv minden Minix-felhasználónak odaát! Egy (ingyenes) operációs rendszert csinálok
+                (csak hobbiból, nem lesz olyan nagy és profi, mint a gnu) a 386-os (486-os)
+                AT-klónokhoz. Április óta érlelem, és lassan elkészül. Szeretnék visszajelzéseket
+                arról, hogy mi tetszik és mi nem tetszik a Minixben az embereknek, mivel az én
+                operációs rendszerem némileg hasonlít rá (többek között (gyakorlati okokból) azonos
+                a fájlrendszer fizikai kiosztása).
+              </p>
+              <p>
+                A bash (1.08) és a gcc (1.40) programokat már átültettem, és úgy tűnik, működik a
+                dolog. Ez azt jelenti, hogy pár hónapon belül valami hasznosat fogok kapni, és
+                kíváncsi lennék, milyen funkciókat szeretnének legtöbben. Minden javaslatot szívesen
+                veszek, azt viszont nem ígérem, hogy meg is valósítom őket :-)
+              </p>
+              <p class="fst-italic">- Linus (torvalds@kruuna.helsinki.fi)</p>
+              <p>
+                Ui.: Igen! Nincs benne Minix-kód és többszálú fs-sel rendelkezik. Nem hordozható (a
+                386 feladatváltást használja stb.), és lehet, hogy soha nem is fog az
+                AT-merevlemezeken kívül bármi mást támogatni, minthogy nekem csak ez van :-(.”
+              </p>
             </div>
             <p>
               Így kezdődött a Linux története. Linus levele számos programozót inspirált. Andrew S.
@@ -500,3 +498,11 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
     </div>
   </main>
 </Layout>
+
+<style>
+  .letter {
+    font-size: 0.925rem;
+    font-family: monospace;
+    padding-inline: 2rem;
+  }
+</style>
