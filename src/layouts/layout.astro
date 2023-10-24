@@ -72,12 +72,12 @@ const { path, title, description } = Astro.props as {
 
   <body>
     <div>
-      <Navigation path={path} transition:persist />
+      <Navigation path={path} />
       <slot />
     </div>
 
-    <Footer transition:persist />
+    <Footer />
 
-    <ScrollTop client:only="react" />
+    <ScrollTop client:load />
   </body>
 </html>

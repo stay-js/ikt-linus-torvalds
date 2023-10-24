@@ -10,7 +10,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
   description="Torvalds Finnországban azon belül Helsinkiben született. Anna és Nils Torvalds újságírók fiaként, Leo Törnqvist statisztikus és Ole Torvalds költő unokájaként, valamint Toivo Karanko újságíró és katona dédunokájaként. Családja a finnországi svéd ajkú kisebbséghez tartozik. Nevét Linus Paulingról, a Nobel-díjas amerikai kémikusról kapta."
 >
   <main class="container">
-    <div class="row" transition:name="title">
+    <div class="row">
       <div class="col-12">
         <h1 class="text-center mt-5">Élete</h1>
       </div>
@@ -153,7 +153,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
       </div>
 
       <div class="col-lg-3 d-lg-block d-none">
-        <TableOfContent client:only="react" transition:name="table-of-content" />
+        <TableOfContent client:only="react" />
       </div>
     </div>
   </main>
