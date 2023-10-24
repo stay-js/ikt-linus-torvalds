@@ -249,26 +249,25 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                 <tr>
                   <th>git config</th>
                   <td>Alap beállitások megadása, hogy a git verzió felvegye ki mit csinált.</td>
-                  <td
-                    ><tt>git config --global user.name "[név]"</tt><br /><tt
-                      >git config --global user.email "[email]"</tt
-                    ></td
-                  >
+                  <td>
+                    git config --global user.name "[név]"
+                    <br />git config --global user.email "[email]"
+                  </td>
                 </tr>
                 <tr>
                   <th>git init</th>
                   <td>Inicializál egy létező git repo-t.</td>
-                  <td><tt>git init</tt></td>
+                  <td>git init</td>
                 </tr>
                 <tr>
                   <th>git clone</th>
                   <td>Visszahoz egy repo-t a megadott url-ről.</td>
-                  <td><tt>git [url]</tt></td>
+                  <td>git [url]</td>
                 </tr>
                 <tr>
                   <th>git status</th>
                   <td>Megmutatja az edig commit-olt fáljokat a színpadon.</td>
-                  <td><tt>git status</tt></td>
+                  <td>git status</td>
                 </tr>
                 <tr>
                   <th>git add</th>
@@ -276,17 +275,17 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                     >Hozzáadja a fáljt a következő commit-odhoz , * al mindent egyszera ami a
                     könyvtrban van.</td
                   >
-                  <td><tt>git [fáljnév]</tt></td>
+                  <td>git [fáljnév]</td>
                 </tr>
                 <tr>
                   <th>git rm</th>
                   <td>Letöröli a fáljt és hozzáadja a törlést a színpadhoz.</td>
-                  <td><tt>git rm [fáljnév]</tt></td>
+                  <td>git rm [fáljnév]</td>
                 </tr>
                 <tr>
                   <th>git mv</th>
                   <td>Áthelyez, átnevez egy fáljt és hozzáadja a változást a színpadhoz.</td>
-                  <td><tt>git mv [honna][hová]</tt></td>
+                  <td>git mv [honna][hová]</td>
                 </tr>
                 <tr>
                   <th rowspan="2">git reset</th>
@@ -294,21 +293,23 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                     >Kivesszi a fáljt a következő commit-odból, --hard -al vissza álitja a
                     munkakönyvtárad a megadott commitra és törli a színpadot.</td
                   >
-                  <td><tt>git reset [fáljnév]</tt></td>
+                  <td>git reset [fáljnév]</td>
                 </tr>
-                <tr><td><tt>git reset --hard [commit]</tt></td></tr>
+                <tr>
+                  <td>git reset --hard [commit]</td>
+                </tr>
                 <tr>
                   <th>git diff</th>
                   <td
                     >Megmutatja mi változot, de még nincs a színpadra adva, --staged: megmutatja
                     mivan színpadon, de nincs még commit-olva.</td
                   >
-                  <td><tt>git diff --staged</tt></td>
+                  <td>git diff --staged</td>
                 </tr>
                 <tr>
                   <th>git commit</th>
                   <td>A színbadonlévő dolgaidat commitolja a repo-ba.</td>
-                  <td><tt>git commit -m "[72 karakter hoszú leírás]"</tt></td>
+                  <td>git commit -m "[maximum 72 karakter hoszú leírás]"</td>
                 </tr>
                 <tr>
                   <th>git branch</th>
@@ -316,12 +317,12 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                     >ki listáza az elágazásokat a repo-ba, Létre hoz egy új elágazást a megadott
                     nével.</td
                   >
-                  <td><tt>git branch [elágazás neve]</tt></td>
+                  <td>git branch [elágazás neve]</td>
                 </tr>
                 <tr>
                   <th>git checkout</th>
                   <td>Át lépé a munkakönyvtáradat egy másik elágazásban a repo-n.</td>
-                  <td><tt>git checkout [elágazás neve]</tt></td>
+                  <td>git checkout [elágazás neve]</td>
                 </tr>
                 <tr>
                   <th>git merge</th>
@@ -329,7 +330,7 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                     >A megadott elágazást hozzá addja abba amiben éppen vagy, a git fetch [Alias]
                     -et lehuzza a remote repo-dba</td
                   >
-                  <td><tt>git merge [elágazás neve/Alias]</tt></td>
+                  <td>git merge [elágazás neve/Alias]</td>
                 </tr>
                 <tr>
                   <th rowspan="2">git log</th>
@@ -338,42 +339,42 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                     2. elágazáson ,de igen az 1.-n, --follow -al egy megadott fálj változásait
                     mutaja.
                   </td>
-                  <td><tt>git log [elagázas2]..[elagázas1]</tt></td>
+                  <td>git log [elagázas2]..[elagázas1]</td>
                 </tr>
                 <tr>
-                  <td><tt>git log --follow [fáljnév]</tt></td>
+                  <td>git log --follow [fáljnév]</td>
                 </tr>
                 <tr>
                   <th>git show</th>
                   <td
                     >Megmutatja a megadott (alapból a fej) objektum adatait (változik fajtánként).</td
                   >
-                  <td><tt>git show [objektum neve]</tt></td>
+                  <td>git show [objektum neve]</td>
                 </tr>
                 <tr>
                   <th>git remote add</th>
                   <td>Lehoza a megadott repot a megadot névként.</td>
-                  <td><tt>git remote ad [Alias][URL]</tt></td>
+                  <td>git remote ad [Alias][URL]</td>
                 </tr>
                 <tr>
                   <th>git fetch</th>
                   <td>Le hozza a remot repo-ról a változásokat, de nem tölti le.</td>
-                  <td><tt>git fetch [Alias]</tt></td>
+                  <td>git fetch [Alias]</td>
                 </tr>
                 <tr>
                   <th>git pull</th>
                   <td>Le huzza a változásokat (fetch+merge).</td>
-                  <td><tt>git pull</tt></td>
+                  <td>git pull</td>
                 </tr>
                 <tr>
                   <th>git push</th>
                   <td>Fel tolja a színpadon lévő változtásokat a megfeleló elágazásba.</td>
-                  <td><tt>git push</tt></td>
+                  <td>git push</td>
                 </tr>
                 <tr>
                   <th>git rebase</th>
                   <td>Át írja a jelenlegi helyed commitojait a megadot elágazásba.</td>
-                  <td><tt>git rebase [elágazás neve]</tt></td>
+                  <td>git rebase [elágazás neve]</td>
                 </tr>
                 <tr>
                   <th rowspan="4">git stash</th>
@@ -381,22 +382,23 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
                     >Elmenti a változásokat és a színpadot lokálisan, ha már kiadtad egyszer új
                     bekezdésként menti el.</td
                   >
-                  <td><tt>git stash</tt></td>
+                  <td>git stash</td>
                 </tr>
                 <tr>
                   <td>Ki listáza az edig elrakot változásokat.</td>
-                  <td><tt>git stash list</tt></td>
+                  <td>git stash list</td>
                 </tr>
                 <tr>
                   <td>Eldobja a legfelső elrakot változást.</td>
-                  <td><tt>git stash pop</tt></td>
+                  <td>git stash pop</td>
                 </tr>
                 <tr>
                   <td>Eldobja az elrakot változást.</td>
-                  <td><tt>git stash drop</tt></td>
+                  <td>git stash drop</td>
                 </tr>
               </tbody>
             </table>
+
             <div class="col-12">
               <h2 id="a-git-kulonfele-megvalositasai">A git különféle megvalósításai</h2>
               <ul>
@@ -632,3 +634,9 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
     </div>
   </main>
 </Layout>
+
+<style>
+  td:last-child {
+    font-family: monospace;
+  }
+</style>
