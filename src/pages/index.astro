@@ -46,7 +46,9 @@ import Layout from '~/layouts/layout.astro';
       <div class="col-12">
         <h2>Tartalom:</h2>
       </div>
+    </div>
 
+    <div class="row row-gap-2">
       <div class="col-md-4">
         <a href="/elete">
           <img
@@ -160,23 +162,23 @@ import Layout from '~/layouts/layout.astro';
       </div>
     </div>
   </main>
-</Layout>
 
-<style lang="scss">
-  @use '../styles/colors' as clr;
+  <style lang="scss">
+    @use '../styles/colors' as clr;
 
-  a {
-    color: black;
-    text-decoration: none;
+    a {
+      color: black;
+      text-decoration: none;
 
-    span {
-      display: block;
-      margin-top: 0.25rem;
-      text-align: center;
+      span {
+        display: block;
+        margin-top: 0.25rem;
+        text-align: center;
+      }
     }
-  }
 
-  li > a {
-    color: clr.$primary;
-  }
-</style>
+    li > a {
+      color: clr.$primary;
+    }
+  </style>
+</Layout>
