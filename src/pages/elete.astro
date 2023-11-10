@@ -1,160 +1,140 @@
 ---
-import Layout from '~/layouts/layout.astro';
-import { TableOfContent } from '~/components/table-of-conent';
+import LayoutWithToc from '~/layouts/layout-with-toc.astro';
 import ImageWithCaption from '~/components/image-with-caption.astro';
 ---
 
-<Layout
+<LayoutWithToc
   path="/elete"
   title="Élete"
   description="Torvalds Finnországban azon belül Helsinkiben született. Anna és Nils Torvalds újságírók fiaként, Leo Törnqvist statisztikus és Ole Torvalds költő unokájaként, valamint Toivo Karanko újságíró és katona dédunokájaként. Családja a finnországi svéd ajkú kisebbséghez tartozik. Nevét Linus Paulingról, a Nobel-díjas amerikai kémikusról kapta."
 >
-  <main class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-center mt-5">Élete</h1>
-      </div>
+  <section class="row">
+    <div class="col-12">
+      <h2 id="korai-elete">Korai évei</h2>
+
+      <ImageWithCaption
+        float="right"
+        src="linus-young.jpg"
+        caption="Linus egyetemi éveiben"
+        width={300}
+      />
+      <p>
+        Torvalds Finnországban azon belül Helsinkiben született. Anna és Nils Torvalds újságírók
+        fiaként, Leo Törnqvist statisztikus és Ole Torvalds költő unokájaként, valamint Toivo
+        Karanko újságíró és katona dédunokájaként. Családja a finnországi svéd ajkú kisebbséghez
+        tartozik. Nevét Linus Paulingról, a Nobel-díjas amerikai kémikusról kapta.
+      </p>
+
+      <h3 id="egyetem">Egyetem</h3>
+      <ImageWithCaption
+        float="left"
+        src="/linus-torvalds-2012.jpg"
+        caption="Linus 2012-ben"
+        width={175}
+      />
+      <p>
+        Torvalds 1988 és 1996 között járt a Helsinki Egyetemre, ahol a NODES kutatócsoport
+        informatikai mesterképzésében szerzett diplomát. Tudományos pályafutása megszakadt az első
+        tanulmányi éve után, amikor is 1989 nyarán csatlakozott a Finn Haditengerészet "Nyland
+        Brigade" nevű alakulatához és ahoz hogy a finnországi kötelező katonai szolgálatát
+        teljesítse egy 11 hónapos tisztképzési programot választotta. Hadnagyi rangot kapott,
+        tüzérségi megfigyelői szerepkörben. Megvette Andrew Tanenbaum számítástechnika professzor
+        Operating Systems: Design and Implementation című könyvét, amelyben Tanenbaum leírja a MINIX
+        működését és a Unix oktatási célra lecsupaszított változatát. 1990-ben Torvalds folytatta
+        egyetemi tanulmányait, és itt találkozott először a Unix- szal egy DEC MicroVAX formájában,
+        amelyen az ULTRIX futott. A mester diplomája Linux: A hordozható operációs rendszer címet
+        kapta.
+      </p>
+
+      <p>
+        Érdeklődése a számítógépek iránt egy VIC-20-al kezdődött 1981-ben, 11 évesen. BASIC-ben
+        kezdett rá programozni. Ezután vásárolt egy Sinclair QL-t, amelyet alaposan módosított,
+        különösen az operációs rendszerét. Majd 1991. január 5-én megvásárolta az IBM PC Intel
+        80386-alapú klónját, mielőtt megkapta a MINIX példányát, ami lehetővé tette számára, hogy
+        elkezdjen dolgozni Linuxon.
+      </p>
+    </div>
+    <div class="col-12">
+      <h2 id="maganelete">Magánélete</h2>
+
+      <ImageWithCaption
+        float="right"
+        src="linus-torvalds-and-his-wife.jpg"
+        caption="Linus és felesége"
+        width={350}
+      />
+      <p>
+        Felesége Tove Torvalds (née Monni), hatszoros finn nemzeti karate bajnok, akit 1993 végén
+        ismert meg. Egy kezdőknek való számítógépes kurzust vezetet és a tanfolyam résztvevőit
+        megkérete hogy küldjön mindenki neki egy e-mail tesz ként és Tove a válasz levelében egy
+        randira hívta el Linust. Később összeházasodtak, és három lányuk született, akik közül már
+        kettő az Egyesült Államokban született.
+      </p>
+      <p>2004-ben Torvalds családjával az oregoni Portlandbe költözött a Szilícium-völgyből.</p>
+      <p>
+        Linus a 2000-es évek elején kezdett érdeklődni a búvárkodás iránt. Épp ezét hozta létre a
+        Subsurface projectett. (A Subsurface projectről a További munkassagai alcím tudhatsz meg
+        többet.)
+      </p>
     </div>
 
-    <div class="row pt-5">
-      <div class="col-lg-9">
-        <section class="row">
-          <div class="col-12">
-            <h2 id="korai-elete">Korai évei</h2>
+    <div class="col-12">
+      <h2 id="eredmenyei-es-elismeresei">Eredményei és elismerései</h2>
 
-            <ImageWithCaption
-              float="right"
-              src="linus-young.jpg"
-              caption="Linus egyetemi éveiben"
-              width={300}
-            />
-            <p>
-              Torvalds Finnországban azon belül Helsinkiben született. Anna és Nils Torvalds
-              újságírók fiaként, Leo Törnqvist statisztikus és Ole Torvalds költő unokájaként,
-              valamint Toivo Karanko újságíró és katona dédunokájaként. Családja a finnországi svéd
-              ajkú kisebbséghez tartozik. Nevét Linus Paulingról, a Nobel-díjas amerikai kémikusról
-              kapta.
-            </p>
-
-            <h3 id="egyetem">Egyetem</h3>
-            <ImageWithCaption
-              float="left"
-              src="/linus-torvalds-2012.jpg"
-              caption="Linus 2012-ben"
-              width={175}
-            />
-            <p>
-              Torvalds 1988 és 1996 között járt a Helsinki Egyetemre, ahol a NODES kutatócsoport
-              informatikai mesterképzésében szerzett diplomát. Tudományos pályafutása megszakadt az
-              első tanulmányi éve után, amikor is 1989 nyarán csatlakozott a Finn Haditengerészet
-              "Nyland Brigade" nevű alakulatához és ahoz hogy a finnországi kötelező katonai
-              szolgálatát teljesítse egy 11 hónapos tisztképzési programot választotta. Hadnagyi
-              rangot kapott, tüzérségi megfigyelői szerepkörben. Megvette Andrew Tanenbaum
-              számítástechnika professzor Operating Systems: Design and Implementation című könyvét,
-              amelyben Tanenbaum leírja a MINIX működését és a Unix oktatási célra lecsupaszított
-              változatát. 1990-ben Torvalds folytatta egyetemi tanulmányait, és itt találkozott
-              először a Unix- szal egy DEC MicroVAX formájában, amelyen az ULTRIX futott. A mester
-              diplomája Linux: A hordozható operációs rendszer címet kapta.
-            </p>
-
-            <p class="mt-sm-5">
-              Érdeklődése a számítógépek iránt egy VIC-20-al kezdődött 1981-ben, 11 évesen.
-              BASIC-ben kezdett rá programozni. Ezután vásárolt egy Sinclair QL-t, amelyet alaposan
-              módosított, különösen az operációs rendszerét. Majd 1991. január 5-én megvásárolta az
-              IBM PC Intel 80386-alapú klónját, mielőtt megkapta a MINIX példányát, ami lehetővé
-              tette számára, hogy elkezdjen dolgozni Linuxon.
-            </p>
-          </div>
-          <div class="col-12">
-            <h2 id="maganelete">Magánélete</h2>
-
-            <ImageWithCaption
-              float="right"
-              src="linus-torvalds-and-his-wife.jpg"
-              caption="Linus és felesége"
-              width={350}
-            />
-            <p>
-              Felesége Tove Torvalds (née Monni), hatszoros finn nemzeti karate bajnok, akit 1993
-              végén ismert meg. Egy kezdőknek való számítógépes kurzust vezetet és a tanfolyam
-              résztvevőit megkérete hogy küldjön mindenki neki egy e-mail tesz ként és Tove a válasz
-              levelében egy randira hívta el Linust. Később összeházasodtak, és három lányuk
-              született, akik közül már kettő az Egyesült Államokban született.
-            </p>
-            <p>
-              2004-ben Torvalds családjával az oregoni Portlandbe költözött a Szilícium-völgyből.
-            </p>
-            <p>
-              Linus a 2000-es évek elején kezdett érdeklődni a búvárkodás iránt. Épp ezét hozta
-              létre a Subsurface projectett. (A Subsurface projectről a További munkassagai alcím
-              tudhatsz meg többet.)
-            </p>
-          </div>
-
-          <div class="col-12">
-            <h2 id="eredmenyei-es-elismeresei">Eredményei és elismerései</h2>
-
-            <ul>
-              <li>
-                2018-ban IEEE Masaru Ibuka Award részesült „A Linux fejlesztésében és elterjedésében
-                végzett vezetéséért”
-              </li>
-              <li>2014-ben IEEE Computer Pioneer Award</li>
-              <li>2012-ben Internet Hall of Fame részese volt Innovators kategoriában</li>
-              <li>
-                Színtén 2012-ben Millennium Technology Prize díjat kapot amely sokak szerint a
-                technológia Nóbel díj
-              </li>
-              <li>
-                2010-ben C&C Prize dijat kapot az információs technológiai ipar, az oktatás, a
-                kutatás fejlődéséhez és életünk javításához való hozzájárulásá ért.
-              </li>
-              <li>
-                2008-ban Hall of Fellows részese lett a Linux kernel létrehozása és a linux
-                operácios rendszer nyílt forráskódú fejlesztésének menedzselésért.
-              </li>
-              <li>2005-ben Vollum Award dijban részesült.</li>
-              <li>2001-ben Takeda Award közösen kapta Richard Stallman-el és en Sakamura-val.</li>
-            </ul>
-          </div>
-
-          <div class="col-12">
-            <h2 id="tovabbi-munkassaga">További munkássága</h2>
-
-            <h3 id="git">Git</h3>
-            <p>
-              Sokan nem tudnak arról, hogy Torvalds kezdeményezte a Git létrejöttét. 2005
-              Áprilisában kezte meg a verzió kezelő szoftver elkészítését, amely mára az egész
-              világon elterjedt. 2005 júliusában át adta a projektett Junio Hamano-nak.
-            </p>
-
-            <h3 id="subsurface">Subsurface</h3>
-            <p>
-              A Subsurface egy búvárkodás naplózására és tervezésére szolgáló szoftver, amelyet
-              Torvalds 2011 végén kezdett el fejleszteni. A szoftver ingyenes és nyílt forráskódú.
-            </p>
-          </div>
-        </section>
-
-        <section class="row pt-5">
-          <div class="col-12">
-            <h2 id="english-summary">English summary</h2>
-            <p>
-              Linus Torvalds, born in Helsinki, Finland, to journalist parents, studied computer
-              science at the University of Helsinki. Despite a break for military service, he
-              continued his studies, developing an interest in Unix. His master's thesis led to the
-              creation of Linux. He's married to Tove née Monni, a karate champion, and they have
-              three daughters. Torvalds, known for his contributions to open-source softwares.He and
-              his family moved to Portland in 2004. In the early 2000s, he got interested in scuba
-              diving, leading to the creation of the Subsurface project.
-            </p>
-          </div>
-        </section>
-      </div>
-
-      <div class="col-lg-3 d-lg-block d-none">
-        <TableOfContent client:only="react" />
-      </div>
+      <ul>
+        <li>
+          2018-ban IEEE Masaru Ibuka Award részesült „A Linux fejlesztésében és elterjedésében
+          végzett vezetéséért”
+        </li>
+        <li>2014-ben IEEE Computer Pioneer Award</li>
+        <li>2012-ben Internet Hall of Fame részese volt Innovators kategoriában</li>
+        <li>
+          Színtén 2012-ben Millennium Technology Prize díjat kapot amely sokak szerint a technológia
+          Nóbel díj
+        </li>
+        <li>
+          2010-ben C&C Prize dijat kapot az információs technológiai ipar, az oktatás, a kutatás
+          fejlődéséhez és életünk javításához való hozzájárulásá ért.
+        </li>
+        <li>
+          2008-ban Hall of Fellows részese lett a Linux kernel létrehozása és a linux operácios
+          rendszer nyílt forráskódú fejlesztésének menedzselésért.
+        </li>
+        <li>2005-ben Vollum Award dijban részesült.</li>
+        <li>2001-ben Takeda Award közösen kapta Richard Stallman-el és en Sakamura-val.</li>
+      </ul>
     </div>
-  </main>
-</Layout>
+
+    <div class="col-12">
+      <h2 id="tovabbi-munkassaga">További munkássága</h2>
+
+      <h3 id="git">Git</h3>
+      <p>
+        Sokan nem tudnak arról, hogy Torvalds kezdeményezte a Git létrejöttét. 2005 Áprilisában
+        kezte meg a verzió kezelő szoftver elkészítését, amely mára az egész világon elterjedt. 2005
+        júliusában át adta a projektett Junio Hamano-nak.
+      </p>
+
+      <h3 id="subsurface">Subsurface</h3>
+      <p>
+        A Subsurface egy búvárkodás naplózására és tervezésére szolgáló szoftver, amelyet Torvalds
+        2011 végén kezdett el fejleszteni. A szoftver ingyenes és nyílt forráskódú.
+      </p>
+    </div>
+  </section>
+
+  <section class="row pt-5">
+    <div class="col-12">
+      <h2 id="english-summary">English summary</h2>
+      <p>
+        Linus Torvalds, born in Helsinki, Finland, to journalist parents, studied computer science
+        at the University of Helsinki. Despite a break for military service, he continued his
+        studies, developing an interest in Unix. His master's thesis led to the creation of Linux.
+        He's married to Tove née Monni, a karate champion, and they have three daughters. Torvalds,
+        known for his contributions to open-source softwares.He and his family moved to Portland in
+        2004. In the early 2000s, he got interested in scuba diving, leading to the creation of the
+        Subsurface project.
+      </p>
+    </div>
+  </section>
+</LayoutWithToc>
