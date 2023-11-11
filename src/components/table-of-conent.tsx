@@ -7,7 +7,7 @@ export const TableOfContent: React.FC = () => {
     .map((element) => ({
       id: element.id,
       text: element.textContent,
-      level: Number(element.tagName.slice(1)),
+      level: Number(element.tagName[1]),
     }));
 
   const [activeHeading, setActiveHeading] = useState<string | undefined>(headings[0]?.id);
