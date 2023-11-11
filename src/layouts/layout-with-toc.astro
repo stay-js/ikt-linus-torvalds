@@ -1,12 +1,11 @@
 ---
+import type { Props as LayoutProps } from './layout.astro';
 import Layout from './layout.astro';
 import { TableOfContent } from '~/components/table-of-conent';
 
-const { path, title, description } = Astro.props as {
-  path: string;
-  title: string;
-  description: string;
-};
+type Props = LayoutProps;
+
+const { path, title, description } = Astro.props as Props;
 ---
 
 <Layout path={path} title={title} description={description}>

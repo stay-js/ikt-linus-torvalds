@@ -6,11 +6,13 @@ import Footer from '~/components/footer.astro';
 
 import '~/styles/globals.scss';
 
-const { path, title, description } = Astro.props as {
+export type Props = {
   path: string;
   title: string;
   description: string;
 };
+
+const { path, title, description } = Astro.props as Props;
 ---
 
 <html lang="hu">
