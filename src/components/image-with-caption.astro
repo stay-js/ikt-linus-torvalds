@@ -1,10 +1,12 @@
 ---
-const { float, src, alt, caption, width } = Astro.props as {
+const { float, src, alt, caption, width, height, maxWidth } = Astro.props as {
   float: 'left' | 'right';
   src: string;
   alt?: string;
   caption: string;
-  width: number;
+  width?: number;
+  height?: number;
+  maxWidth: number;
 };
 ---
 
@@ -13,7 +15,9 @@ const { float, src, alt, caption, width } = Astro.props as {
     src={src}
     alt={alt ?? caption}
     class="img-fluid img-thumbnail"
-    style={`max-width: ${width}px`}
+    style={`max-width: ${maxWidth}px`}
+    width={width}
+    height={height}
   />
   <figcaption class="fst-italic text-center mt-1">{caption}</figcaption>
 </figure>

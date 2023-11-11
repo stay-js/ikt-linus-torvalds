@@ -12,7 +12,14 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
     <div class="col-12">
       <h2 id="a-git-altalanos-tudnivaloi">A Git általános tudnivalói</h2>
 
-      <ImageWithCaption float="left" src="/gitnotext.jpg" caption="Git logo" width={120} />
+      <ImageWithCaption
+        float="left"
+        src="/gitnotext.jpg"
+        caption="Git logo"
+        width={383}
+        height={383}
+        maxWidth={120}
+      />
       <h3 id="mi-az-a-git">Mi az a git?</h3>
       <p>
         A <strong>Git</strong> egy elosztott verziókezelő rendszer, amelyet a számítógépes fájlok
@@ -70,7 +77,14 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
         mellett más nyílt forráskódú projektjeke is elkezdték használni a Gitet.
       </p>
 
-      <ImageWithCaption float="right" src="/github.jpg" caption="GitHub logo" width={120} />
+      <ImageWithCaption
+        float="right"
+        src="/github.jpg"
+        caption="GitHub logo"
+        width={560}
+        height={560}
+        maxWidth={120}
+      />
       <h3 id="github-alapitasa">GitHub alapítása</h3>
       <p>
         2008-ban <em>Tom Preston-Werner, Chris Wanstrath és PJ Hyett</em> megalapították a GitHubot,
@@ -167,7 +181,9 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
         float="right"
         src="/git-operations.jpg"
         caption="Git működése"
-        width={350}
+        width={734}
+        height={600}
+        maxWidth={350}
       />
       <ul>
         <li>
@@ -435,7 +451,14 @@ import ImageWithCaption from '~/components/image-with-caption.astro';
         </p>
 
         <h3 id="kulonfele-verziok">Különféle verziók</h3>
-        <ImageWithCaption float="right" src="/gerrit.png" caption="Gerrit logo" width={200} />
+        <ImageWithCaption
+          float="right"
+          src="/gerrit.png"
+          caption="Gerrit logo"
+          width={300}
+          height={279}
+          maxWidth={200}
+        />
         <ul>
           <li>
             <strong>Gerrit</strong>: A Gerrit egy népszerű Git szerver, amely lehetővé teszi a
