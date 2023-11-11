@@ -1,5 +1,5 @@
 ---
-const { float, src, alt, caption, width, height, maxWidth } = Astro.props as {
+type Props = {
   float: 'left' | 'right';
   src: string;
   alt?: string;
@@ -8,6 +8,8 @@ const { float, src, alt, caption, width, height, maxWidth } = Astro.props as {
   height?: number;
   maxWidth: number;
 };
+
+const { float, src, alt, caption, width, height, maxWidth } = Astro.props as Props;
 ---
 
 <figure class={float === 'left' ? 'float-sm-start me-sm-3' : 'float-sm-end ms-sm-3'}>
