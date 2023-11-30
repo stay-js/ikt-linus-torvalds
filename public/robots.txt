@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://linus-torvalds.znagy.hu
+Sitemap: https://linus-torvalds.znagy.hu/sitemap.xml

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://linus-torvalds.znagy.hu</loc>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://linus-torvalds.znagy.hu/elete</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://linus-torvalds.znagy.hu/linux</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://linus-torvalds.znagy.hu/git</loc>
+  <priority>0.80</priority>
+</url>
+</urlset>
